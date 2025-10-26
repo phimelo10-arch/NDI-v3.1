@@ -5,6 +5,7 @@ import { Pricing } from './_components/pricing';
 import { NewMembers } from './_components/new-members';
 import { ContentShowcase } from './_components/content-showcase';
 import { BrotherOfTheWeek } from './_components/brother-of-the-week';
+import { TestimonialsVideo } from './_components/testimonials-video';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <div className="w-full max-w-3xl space-y-10 text-center">
           <Pricing />
         </div>
+        <TestimonialsVideo />
         <NewMembers />
         <ContentShowcase />
         <BrotherOfTheWeek />
