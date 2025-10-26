@@ -6,7 +6,6 @@ export function TestimonialsVideo() {
         <div className="flex justify-center my-4">
             <ChevronDown className="h-8 w-8 text-muted-foreground" />
         </div>
-        <h2 className="text-2xl font-bold mb-8 font-headline" style={{ color: '#4DB8FF' }}>O que os irmãos falam</h2>
         <div className="w-full shadow-2xl rounded-2xl overflow-hidden border-4 border-primary/20">
             <div className="aspect-w-9 aspect-h-16">
             <iframe
