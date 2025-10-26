@@ -21,8 +21,8 @@ export function ValueProposition() {
         <ChevronDown className="h-8 w-8 text-muted-foreground" />
       </div>
       <p className="text-accent text-sm">Aqui, ninguém solta a mão de ninguém!</p>
-      <p className="font-bold text-primary text-xl md:text-2xl font-headline">
-        <span className="text-primary font-bold">A missão é um AJUDAR o OUTRO ta lgd?</span>
+      <p className="font-bold text-xl md:text-2xl font-headline">
+        <span className="font-bold" style={{ color: '#4DB8FF' }}>A missão é um AJUDAR o OUTRO ta lgd?</span>
       </p>
       <p>
         Aqui é todo mundo no corre, na luta... mas com sorriso no rosto, por que a gente sabe que <span className="font-bold">UMA HORA VAI DAR CERTO.</span>
