@@ -21,7 +21,7 @@ export function FeaturedContributors() {
       <div className="flex justify-center my-4">
         <ChevronDown className="h-8 w-8 text-muted-foreground" />
       </div>
-      <h3 className="font-bold text-primary mb-2 text-xl md:text-2xl font-headline text-center">Irmãos QUE MAIS AJUDARAM na última semana</h3>
+      <h3 className="font-bold mb-2 text-xl md:text-2xl font-headline text-center" style={{ color: '#4DB8FF' }}>Irmãos QUE MAIS AJUDARAM na última semana</h3>
       <p className="text-sm text-muted-foreground mb-6 text-center">(atualizado em 09/09/2025)</p>
       <div className="relative w-full overflow-hidden">
         <div className="flex animate-marquee-slow space-x-8">
