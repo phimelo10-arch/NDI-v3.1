@@ -65,7 +65,7 @@ export function Pricing() {
           <ChevronDown className="h-8 w-8 text-muted-foreground" />
         </div>
 
-        <Card className="bg-muted/30 border-dashed">
+        <Card id="lote-3" className="bg-muted/30 border-dashed">
           <CardContent className="p-4 flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-left">
               <p className="font-bold font-headline">Lote 3: R$37,00</p>

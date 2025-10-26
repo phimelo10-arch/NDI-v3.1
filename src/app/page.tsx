@@ -6,6 +6,7 @@ import { NewMembers } from './_components/new-members';
 import { ContentShowcase } from './_components/content-showcase';
 import { BrotherOfTheWeek } from './_components/brother-of-the-week';
 import { TestimonialsVideo } from './_components/testimonials-video';
+import { PixelEvents } from './_components/pixel-events';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <ContentShowcase />
         <BrotherOfTheWeek />
       </main>
+      <PixelEvents />
     </div>
   );
 }
