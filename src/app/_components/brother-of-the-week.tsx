@@ -13,7 +13,7 @@ export function BrotherOfTheWeek() {
       <div className="flex justify-center mb-4">
         <Trophy className="h-8 w-8 text-yellow-400" />
       </div>
-      <h2 className="text-2xl font-bold text-primary mb-8 font-headline">Irmão da SEMANA</h2>
+      <h2 className="text-2xl font-bold mb-8 font-headline" style={{ color: '#4DB8FF' }}>Irmão da SEMANA</h2>
       <Card className="bg-card border-accent shadow-lg shadow-accent/20">
         <CardContent className="p-8">
           <Image
@@ -28,8 +28,7 @@ export function BrotherOfTheWeek() {
           <div className="mt-8 text-left bg-background/50 p-6 rounded-lg">
             <p className="font-bold text-primary text-lg mb-2 font-headline">Palavras do Presidente:</p>
             <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground whitespace-pre-line">
-              {`"Mano, o cara tem 17 ofertas, ganha mais de 30k de LUCRO por mes, e simplesmente fica na CALL até de madrugada, mesmo com dor de dente, para ajudar os parceiros a subirem campanhas de infoproduto 3 filhos pra cuidar, esposa no pé as vezes... e ele mesmo SE OFERECEU, pra dar aula SEMANAIS pra galera que tá começando no mercado digital Que Deus te abençoe meu irmão Juliao, você é uma benção nas nossas vidas "`
-              }
+              {`"Mano, o cara tem 17 ofertas, ganha mais de 30k de LUCRO por mes, e simplesmente fica na CALL até de madrugada, mesmo com dor de dente, para ajudar os parceiros a subirem campanhas de infoproduto 3 filhos pra cuidar, esposa no pé as vezes... e ele mesmo SE OFERECEU, pra dar aula SEMANAIS pra galera que tá começando no mercado digital Que Deus te abençoe meu irmão Juliao, você é uma benção nas nossas vidas "`}
             </blockquote>
           </div>
         </CardContent>
