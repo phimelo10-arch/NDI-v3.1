@@ -36,5 +36,3 @@ export function BrotherOfTheWeek() {
     </div>
   );
 }
-
-    
