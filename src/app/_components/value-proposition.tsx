@@ -57,7 +57,7 @@ export function ValueProposition() {
               </li>
             ))}
           </ul>
-          <p id="the-rule" className="font-bold text-primary text-center pt-4 text-xl md:text-2xl font-headline">A ÚNICA REGRA É:</p>
+          <p id="the-rule" className="font-bold text-center pt-4 text-xl md:text-2xl font-headline" style={{ color: '#4DB8FF' }}>A ÚNICA REGRA É:</p>
           <p className="text-center font-semibold">UM AJUDANDO O OUTRO. SEMPRE!</p>
           <p className="text-center text-sm text-muted-foreground">Sem individualismo. Sem estrelismo.</p>
         </CardContent>
