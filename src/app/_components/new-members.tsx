@@ -1,3 +1,4 @@
+"use client"
 import {
   Table,
   TableBody,
@@ -7,6 +8,7 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { Users } from "lucide-react"
+import { useEffect, useState } from "react";
 
 const members = [
     { entryDate: "08/09/2025", amount: "R$37,00", name: "Kaiq", age: "19", state: "SP", skills: "automação N8N", partnership: "Sim" },
@@ -24,6 +26,22 @@ const members = [
 ];
 
 export function NewMembers() {
+  const [yesterday, setYesterday] = useState('');
+
+  useEffect(() => {
+    const today = new Date();
+    // Set to Brasília time zone (UTC-3)
+    today.setUTCHours(today.getUTCHours() - 3);
+    const yesterdayDate = new Date(today);
+    yesterdayDate.setDate(today.getDate() - 1);
+    
+    const day = String(yesterdayDate.getDate()).padStart(2, '0');
+    const month = String(yesterdayDate.getMonth() + 1).padStart(2, '0');
+    const year = yesterdayDate.getFullYear();
+    
+    setYesterday(`${day}/${month}/${year}`);
+  }, []);
+
   return (
     <div className="w-full max-w-6xl mt-20 text-center">
       <div className="flex justify-center mb-4">
@@ -60,7 +78,7 @@ export function NewMembers() {
         </Table>
       </div>
       <p className="mt-4 text-lg font-semibold text-accent font-headline">Garanta sua vaga no lote 2!</p>
-      <p className="text-sm text-muted-foreground mt-1">(atualizado em 08/09/2025)</p>
+      <p className="text-sm text-muted-foreground mt-1">(atualizado em {yesterday})</p>
     </div>
   );
 }
