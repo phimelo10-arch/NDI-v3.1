@@ -57,7 +57,7 @@
     {
       "id": "profile-danilojuliao-large",
       "description": "@danilojuliao_",
-      "imageUrl": "https://i.imgur.com/ytChM19.jpeg",
+      "imageUrl": "https://i.imgur.com/LpWGJ8D.png",
       "imageHint": "profile photo"
     },
     {
@@ -95,6 +95,12 @@
       "description": "Exemplo de conteúdo do grupo 6",
       "imageUrl": "https://i.imgur.com/MuQLlsH.jpeg",
       "imageHint": "screenshot social"
+    },
+    {
+      "id": "community-intro-video-placeholder",
+      "description": "Introdução da comunidade",
+      "imageUrl": "https://i.imgur.com/397qKZd.png",
+      "imageHint": "community intro"
     }
   ]
 }
