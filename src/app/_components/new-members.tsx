@@ -11,18 +11,18 @@ import { Users } from "lucide-react"
 import { useEffect, useState } from "react";
 
 const initialMembers = [
-    { amount: "R$37,00", name: "Kaiq", age: "19", state: "SP", skills: "automação N8N", partnership: "Sim" },
-    { amount: "R$37,00", name: "Nicholas", age: "24", state: "MG", skills: "design gráfico, web design", partnership: "Sim" },
-    { amount: "R$37,00", name: "Djeimis", age: "24", state: "RS", skills: "Kawai, After Pay, Cash on Delivery", partnership: "Sim" },
-    { amount: "R$37,00", name: "Glauber", age: "25", state: "SP", skills: "desenvolvedor web, vibe coder", partnership: "Sim" },
-    { amount: "R$37,00", name: "Wagno", age: "46", state: "CE", skills: "iniciante", partnership: "Não sei" },
-    { amount: "R$37,00", name: "Pedro", age: "26", state: "SP", skills: "Tráfego Pago", partnership: "Sim" },
-    { amount: "R$37,00", name: "Léo", age: "?", state: "MG", skills: "Não informado", partnership: "Não sei" },
-    { amount: "R$37,00", name: "Gabriel", age: "?", state: "MG", skills: "Google Ads e Copywriter", partnership: "Sim" },
-    { amount: "R$37,00", name: "Gilmar", age: "18", state: "PB", skills: "Ex dono de agência", partnership: "Sim" },
-    { amount: "R$37,00", name: "Arilson", age: "?", state: "SP", skills: "Não informado", partnership: "Não sei" },
-    { amount: "R$37,00", name: "Julião", age: "31", state: "RJ", skills: "Avançado - Em busca dos 6 digítos de lucro", partnership: "Sim" },
-    { amount: "R$37,00", name: "Matheus", age: "20", state: "RJ", skills: "Iniciante", partnership: "Não sei" },
+    { amount: "R$10,00", name: "Kaiq", age: "19", state: "SP", skills: "automação N8N", partnership: "Sim" },
+    { amount: "R$10,00", name: "Nicholas", age: "24", state: "MG", skills: "design gráfico, web design", partnership: "Sim" },
+    { amount: "R$10,00", name: "Djeimis", age: "24", state: "RS", skills: "Kawai, After Pay, Cash on Delivery", partnership: "Sim" },
+    { amount: "R$10,00", name: "Glauber", age: "25", state: "SP", skills: "desenvolvedor web, vibe coder", partnership: "Sim" },
+    { amount: "R$10,00", name: "Wagno", age: "46", state: "CE", skills: "iniciante", partnership: "Não sei" },
+    { amount: "R$10,00", name: "Pedro", age: "26", state: "SP", skills: "Tráfego Pago", partnership: "Sim" },
+    { amount: "R$10,00", name: "Léo", age: "?", state: "MG", skills: "Não informado", partnership: "Não sei" },
+    { amount: "R$10,00", name: "Gabriel", age: "?", state: "MG", skills: "Google Ads e Copywriter", partnership: "Sim" },
+    { amount: "R$10,00", name: "Gilmar", age: "18", state: "PB", skills: "Ex dono de agência", partnership: "Sim" },
+    { amount: "R$10,00", name: "Arilson", age: "?", state: "SP", skills: "Não informado", partnership: "Não sei" },
+    { amount: "R$10,00", name: "Julião", age: "31", state: "RJ", skills: "Avançado - Em busca dos 6 digítos de lucro", partnership: "Sim" },
+    { amount: "R$10,00", name: "Matheus", age: "20", state: "RJ", skills: "Iniciante", partnership: "Não sei" },
 ];
 
 export function NewMembers() {
