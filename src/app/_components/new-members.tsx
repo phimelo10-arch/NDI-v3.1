@@ -10,36 +10,61 @@ import {
 import { Users } from "lucide-react"
 import { useEffect, useState } from "react";
 
-const members = [
-    { entryDate: "08/09/2025", amount: "R$37,00", name: "Kaiq", age: "19", state: "SP", skills: "automação N8N", partnership: "Sim" },
-    { entryDate: "08/09/2025", amount: "R$37,00", name: "Nicholas", age: "24", state: "MG", skills: "design gráfico, web design", partnership: "Sim" },
-    { entryDate: "08/09/2025", amount: "R$37,00", name: "Djeimis", age: "24", state: "RS", skills: "Kawai, After Pay, Cash on Delivery", partnership: "Sim" },
-    { entryDate: "08/09/2025", amount: "R$37,00", name: "Glauber", age: "25", state: "SP", skills: "desenvolvedor web, vibe coder", partnership: "Sim" },
-    { entryDate: "07/09/2025", amount: "R$37,00", name: "Wagno", age: "46", state: "CE", skills: "iniciante", partnership: "Não sei" },
-    { entryDate: "07/09/2025", amount: "R$37,00", name: "Pedro", age: "26", state: "SP", skills: "Tráfego Pago", partnership: "Sim" },
-    { entryDate: "06/09/2025", amount: "R$37,00", name: "Léo", age: "?", state: "MG", skills: "Não informado", partnership: "Não sei" },
-    { entryDate: "06/09/2025", amount: "R$37,00", name: "Gabriel", age: "?", state: "MG", skills: "Google Ads e Copywriter", partnership: "Sim" },
-    { entryDate: "06/09/2025", amount: "R$37,00", name: "Gilmar", age: "18", state: "PB", skills: "Ex dono de agência", partnership: "Sim" },
-    { entryDate: "06/09/2025", amount: "R$37,00", name: "Arilson", age: "?", state: "SP", skills: "Não informado", partnership: "Não sei" },
-    { entryDate: "06/09/2025", amount: "R$37,00", name: "Julião", age: "31", state: "RJ", skills: "Avançado - Em busca dos 6 digítos de lucro", partnership: "Sim" },
-    { entryDate: "06/09/2025", amount: "R$37,00", name: "Matheus", age: "20", state: "RJ", skills: "Iniciante", partnership: "Não sei" },
+const initialMembers = [
+    { amount: "R$37,00", name: "Kaiq", age: "19", state: "SP", skills: "automação N8N", partnership: "Sim" },
+    { amount: "R$37,00", name: "Nicholas", age: "24", state: "MG", skills: "design gráfico, web design", partnership: "Sim" },
+    { amount: "R$37,00", name: "Djeimis", age: "24", state: "RS", skills: "Kawai, After Pay, Cash on Delivery", partnership: "Sim" },
+    { amount: "R$37,00", name: "Glauber", age: "25", state: "SP", skills: "desenvolvedor web, vibe coder", partnership: "Sim" },
+    { amount: "R$37,00", name: "Wagno", age: "46", state: "CE", skills: "iniciante", partnership: "Não sei" },
+    { amount: "R$37,00", name: "Pedro", age: "26", state: "SP", skills: "Tráfego Pago", partnership: "Sim" },
+    { amount: "R$37,00", name: "Léo", age: "?", state: "MG", skills: "Não informado", partnership: "Não sei" },
+    { amount: "R$37,00", name: "Gabriel", age: "?", state: "MG", skills: "Google Ads e Copywriter", partnership: "Sim" },
+    { amount: "R$37,00", name: "Gilmar", age: "18", state: "PB", skills: "Ex dono de agência", partnership: "Sim" },
+    { amount: "R$37,00", name: "Arilson", age: "?", state: "SP", skills: "Não informado", partnership: "Não sei" },
+    { amount: "R$37,00", name: "Julião", age: "31", state: "RJ", skills: "Avançado - Em busca dos 6 digítos de lucro", partnership: "Sim" },
+    { amount: "R$37,00", name: "Matheus", age: "20", state: "RJ", skills: "Iniciante", partnership: "Não sei" },
 ];
 
 export function NewMembers() {
   const [yesterday, setYesterday] = useState('');
+  const [members, setMembers] = useState(initialMembers.map(m => ({ ...m, entryDate: '' })));
 
   useEffect(() => {
     const today = new Date();
     // Set to Brasília time zone (UTC-3)
     today.setUTCHours(today.getUTCHours() - 3);
+
+    const formatDate = (date: Date) => {
+      const day = String(date.getDate()).padStart(2, '0');
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const year = date.getFullYear();
+      return `${day}/${month}/${year}`;
+    };
+    
     const yesterdayDate = new Date(today);
     yesterdayDate.setDate(today.getDate() - 1);
-    
-    const day = String(yesterdayDate.getDate()).padStart(2, '0');
-    const month = String(yesterdayDate.getMonth() + 1).padStart(2, '0');
-    const year = yesterdayDate.getFullYear();
-    
-    setYesterday(`${day}/${month}/${year}`);
+    setYesterday(formatDate(yesterdayDate));
+
+    const dayBeforeYesterdayDate = new Date(today);
+    dayBeforeYesterdayDate.setDate(today.getDate() - 2);
+    const dayBeforeYesterday = formatDate(dayBeforeYesterdayDate);
+
+    const threeDaysAgoDate = new Date(today);
+    threeDaysAgoDate.setDate(today.getDate() - 3);
+    const threeDaysAgo = formatDate(threeDaysAgoDate);
+
+    setMembers(initialMembers.map((member, index) => {
+      let entryDate;
+      if (index < 5) {
+        entryDate = formatDate(yesterdayDate);
+      } else if (index < 9) {
+        entryDate = dayBeforeYesterday;
+      } else {
+        entryDate = threeDaysAgo;
+      }
+      return { ...member, entryDate };
+    }));
+
   }, []);
 
   return (
