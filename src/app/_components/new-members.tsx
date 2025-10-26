@@ -1,0 +1,66 @@
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
+import { Users } from "lucide-react"
+
+const members = [
+    { entryDate: "08/09/2025", amount: "R$37,00", name: "Kaiq", age: "19", state: "SP", skills: "automação N8N", partnership: "Sim" },
+    { entryDate: "08/09/2025", amount: "R$37,00", name: "Nicholas", age: "24", state: "MG", skills: "design gráfico, web design", partnership: "Sim" },
+    { entryDate: "08/09/2025", amount: "R$37,00", name: "Djeimis", age: "24", state: "RS", skills: "Kawai, After Pay, Cash on Delivery", partnership: "Sim" },
+    { entryDate: "08/09/2025", amount: "R$37,00", name: "Glauber", age: "25", state: "SP", skills: "desenvolvedor web, vibe coder", partnership: "Sim" },
+    { entryDate: "07/09/2025", amount: "R$37,00", name: "Wagno", age: "46", state: "CE", skills: "iniciante", partnership: "Não sei" },
+    { entryDate: "07/09/2025", amount: "R$37,00", name: "Pedro", age: "26", state: "SP", skills: "Tráfego Pago", partnership: "Sim" },
+    { entryDate: "06/09/2025", amount: "R$37,00", name: "Léo", age: "?", state: "MG", skills: "Não informado", partnership: "Não sei" },
+    { entryDate: "06/09/2025", amount: "R$37,00", name: "Gabriel", age: "?", state: "MG", skills: "Google Ads e Copywriter", partnership: "Sim" },
+    { entryDate: "06/09/2025", amount: "R$37,00", name: "Gilmar", age: "18", state: "PB", skills: "Ex dono de agência", partnership: "Sim" },
+    { entryDate: "06/09/2025", amount: "R$37,00", name: "Arilson", age: "?", state: "SP", skills: "Não informado", partnership: "Não sei" },
+    { entryDate: "06/09/2025", amount: "R$37,00", name: "Julião", age: "31", state: "RJ", skills: "Avançado - Em busca dos 6 digítos de lucro", partnership: "Sim" },
+    { entryDate: "06/09/2025", amount: "R$37,00", name: "Matheus", age: "20", state: "RJ", skills: "Iniciante", partnership: "Não sei" },
+];
+
+export function NewMembers() {
+  return (
+    <div className="w-full max-w-6xl mt-20 text-center">
+      <div className="flex justify-center mb-4">
+        <Users className="h-8 w-8 text-muted-foreground" />
+      </div>
+      <h2 className="text-2xl font-bold text-primary mb-2 font-headline">Membros recém chegados</h2>
+      <p className="text-sm text-foreground mb-8">(atualizado a cada três dias)</p>
+      <div className="overflow-x-auto rounded-lg border border-border">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead className="text-center">data_entrada</TableHead>
+              <TableHead className="text-center">valor_pago</TableHead>
+              <TableHead className="text-center">nome</TableHead>
+              <TableHead className="text-center">idade</TableHead>
+              <TableHead className="text-center">estado</TableHead>
+              <TableHead className="text-center">skills</TableHead>
+              <TableHead className="text-center">aceita_sociedade</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {members.map((member, index) => (
+              <TableRow key={index} className="text-center">
+                <TableCell>{member.entryDate}</TableCell>
+                <TableCell className="font-bold text-accent bg-accent/10">{member.amount}</TableCell>
+                <TableCell>{member.name}</TableCell>
+                <TableCell>{member.age}</TableCell>
+                <TableCell>{member.state}</TableCell>
+                <TableCell>{member.skills}</TableCell>
+                <TableCell>{member.partnership}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
+      <p className="mt-4 text-lg font-semibold text-accent font-headline">Garanta sua vaga no lote 2!</p>
+      <p className="text-sm text-muted-foreground mt-1">(atualizado em 08/09/2025)</p>
+    </div>
+  );
+}
