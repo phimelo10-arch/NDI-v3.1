@@ -18,7 +18,7 @@ export function ContentShowcase() {
       <div className="flex justify-center mb-4">
         <MessageSquare className="h-8 w-8 text-muted-foreground" />
       </div>
-      <h2 className="text-2xl font-bold text-primary mb-2 font-headline">Tipo de coisas que falamos no grupo e no DISCORD</h2>
+      <h2 className="text-2xl font-bold mb-2 font-headline" style={{ color: '#4DB8FF' }}>tipo de coisas que falamos no grupo e no DISCORD</h2>
       <p className="text-foreground mb-8 max-w-3xl mx-auto">
         Infoprodutos, SaaS, Ofertas, Low Ticket, Quiz, Mineração, Modelagem de ofertas, mercado hot, packs, ferramentas gratuitas, rateios, compartilhamento de senhas, desenvolvimento páginas, funis de vendas, X1 WhatsApp, Automação, Criativo, estrutura de anuncios, Meta Ads, Google Ads
       </p>
