@@ -35,13 +35,13 @@ export function NewMembers() {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead className="text-center">data_entrada</TableHead>
-              <TableHead className="text-center">valor_pago</TableHead>
-              <TableHead className="text-center">nome</TableHead>
-              <TableHead className="text-center">idade</TableHead>
-              <TableHead className="text-center">estado</TableHead>
-              <TableHead className="text-center">skills</TableHead>
-              <TableHead className="text-center">aceita_sociedade</TableHead>
+              <TableHead className="text-center text-primary">data_entrada</TableHead>
+              <TableHead className="text-center text-primary">valor_pago</TableHead>
+              <TableHead className="text-center text-primary">nome</TableHead>
+              <TableHead className="text-center text-primary">idade</TableHead>
+              <TableHead className="text-center text-primary">estado</TableHead>
+              <TableHead className="text-center text-primary">skills</TableHead>
+              <TableHead className="text-center text-primary">aceita_sociedade</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>

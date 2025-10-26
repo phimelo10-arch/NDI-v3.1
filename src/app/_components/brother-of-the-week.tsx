@@ -14,7 +14,7 @@ export function BrotherOfTheWeek() {
         <Trophy className="h-8 w-8 text-yellow-400" />
       </div>
       <h2 className="text-2xl font-bold text-primary mb-8 font-headline">Irmão da SEMANA</h2>
-      <Card className="bg-muted/30 border-accent shadow-lg shadow-accent/20">
+      <Card className="bg-card border-accent shadow-lg shadow-accent/20">
         <CardContent className="p-8">
           <Image
             alt={brotherOfTheWeekImage.description}

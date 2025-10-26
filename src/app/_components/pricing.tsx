@@ -51,7 +51,7 @@ export function Pricing() {
               ))}
             </ul>
             <div className="w-full mt-4">
-              <Button asChild size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+              <Button asChild size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg font-bold">
                 <Link href="https://pay.hotmart.com/M101807356R?checkoutMode=10&bid=1757367113402">Entrar na Comunidade por R$37</Link>
               </Button>
             </div>

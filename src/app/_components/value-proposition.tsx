@@ -27,7 +27,7 @@ export function ValueProposition() {
       <p>
         Aqui é todo mundo no corre, na luta... mas com sorriso no rosto, por que a gente sabe que <span className="font-bold">UMA HORA VAI DAR CERTO.</span>
       </p>
-      <Card className="text-left bg-background/5 p-6 shadow-sm border my-6">
+      <Card className="text-left bg-card p-6 shadow-sm border my-6">
         <CardContent className="p-0">
           <div className="flex justify-center items-center space-x-4 mb-4">
             {whatsappIcon && (
