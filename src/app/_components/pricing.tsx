@@ -68,7 +68,7 @@ export function Pricing() {
         <Card className="bg-muted/30 border-dashed">
           <CardContent className="p-4 flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-left">
-              <p className="font-bold font-headline">Lote 3: R$97,00</p>
+              <p className="font-bold font-headline">Lote 3: R$37,00</p>
               <p className="text-sm text-muted-foreground flex items-center gap-2">
                 <Hourglass className="h-4 w-4" /> ESPERANDO liberar
               </p>
