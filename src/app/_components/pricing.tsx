@@ -32,7 +32,7 @@ export function Pricing() {
           <CardContent className="p-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="text-left">
-                <p className="font-bold font-headline">Lote 2: R$37,00</p>
+                <p className="font-bold font-headline">Lote 2: R$10,00</p>
                 <p className="text-sm text-accent flex items-center gap-2">
                   <span className="relative flex h-3 w-3">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
@@ -52,7 +52,7 @@ export function Pricing() {
             </ul>
             <div className="w-full mt-4">
               <Button asChild size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg font-bold">
-                <Link href="https://pay.hotmart.com/M101807356R?checkoutMode=10&bid=1757367113402">Entrar na Comunidade por R$37</Link>
+                <Link href="https://pay.hotmart.com/M101807356R?checkoutMode=10&bid=1757367113402">Entrar na Comunidade por R$10</Link>
               </Button>
             </div>
             <Progress value={progressValue} className="w-full mt-4 h-2" />
