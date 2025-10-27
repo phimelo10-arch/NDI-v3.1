@@ -10,7 +10,7 @@ export function TestimonialsVideo() {
             <div className="aspect-w-9 aspect-h-16">
             <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/gSH4MUk1P84"
+                src="https://www.youtube.com/embed/gSH4MUk1P84?controls=0&rel=0"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
