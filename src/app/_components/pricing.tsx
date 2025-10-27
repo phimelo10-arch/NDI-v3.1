@@ -25,7 +25,7 @@ export function Pricing() {
       </div>
       <div>
         <p className="text-sm text-muted-foreground mb-1">"network dos irmãos 💰💸" - marketing digital</p>
-        <h3 className="text-xl md:text-2xl font-bold mt-4 font-headline" style={{ color: '#4DB8FF' }}>Após 100 membros - o valor subirá</h3>
+        <h3 className="text-xl md:text-2xl font-bold mt-4 font-headline" style={{ color: '#4DB8FF' }}>Após 100 membros - R$37 no pix</h3>
       </div>
       <div className="space-y-4 mt-8">
         <Card className="border-accent shadow-lg shadow-accent/20">
