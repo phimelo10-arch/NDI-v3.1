@@ -25,9 +25,11 @@ const initialMembers = [
     { amount: "R$10,00", name: "Matheus", age: "20", state: "RJ", skills: "Iniciante", partnership: "Não sei" },
 ];
 
+type Member = typeof initialMembers[0] & { entryDate: string };
+
 export function NewMembers() {
   const [yesterday, setYesterday] = useState('');
-  const [members, setMembers] = useState(initialMembers.map(m => ({ ...m, entryDate: '' })));
+  const [members, setMembers] = useState<Member[]>([]);
 
   useEffect(() => {
     const today = new Date();
@@ -53,7 +55,7 @@ export function NewMembers() {
     threeDaysAgoDate.setDate(today.getDate() - 3);
     const threeDaysAgo = formatDate(threeDaysAgoDate);
 
-    setMembers(initialMembers.map((member, index) => {
+    const datedMembers = initialMembers.map((member, index) => {
       let entryDate;
       if (index < 5) {
         entryDate = formatDate(yesterdayDate);
@@ -63,9 +65,15 @@ export function NewMembers() {
         entryDate = threeDaysAgo;
       }
       return { ...member, entryDate };
-    }));
+    });
+    setMembers(datedMembers);
 
   }, []);
+
+  if (members.length === 0) {
+    // Render a placeholder or nothing while waiting for client-side rendering
+    return null;
+  }
 
   return (
     <div className="w-full max-w-6xl mt-20 text-center">
@@ -103,7 +111,7 @@ export function NewMembers() {
         </Table>
       </div>
       <p className="mt-4 text-lg font-semibold text-accent font-headline">Garanta sua vaga no lote 2!</p>
-      <p className="text-sm text-muted-foreground mt-1">(atualizado em {yesterday})</p>
+      <p className="text-sm text-muted-foreground mt-1">{yesterday ? `(atualizado em ${yesterday})` : ''}</p>
     </div>
   );
 }
