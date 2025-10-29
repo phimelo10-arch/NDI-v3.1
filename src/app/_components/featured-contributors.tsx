@@ -3,6 +3,7 @@ import Image from 'next/image';
 import placeholderData from '@/lib/placeholder-images.json';
 import { ChevronDown } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { Skeleton } from '@/components/ui/skeleton';
 
 const contributors = [
   'profile-carlodeamorim',
@@ -39,7 +40,13 @@ export function FeaturedContributors() {
         <ChevronDown className="h-8 w-8 text-muted-foreground" />
       </div>
       <h3 className="font-bold mb-2 text-xl md:text-2xl font-headline text-center text-primary">Irmãos QUE MAIS AJUDARAM na última semana</h3>
-      <p className="text-sm text-muted-foreground mb-6 text-center">{yesterday ? `(atualizado em ${yesterday})` : ''}</p>
+      {yesterday ? (
+        <p className="text-sm text-muted-foreground mb-6 text-center">{`(atualizado em ${yesterday})`}</p>
+      ) : (
+        <div className="flex justify-center mb-6">
+          <Skeleton className="h-5 w-40" />
+        </div>
+      )}
       <div className="relative w-full overflow-hidden">
         <div className="flex animate-marquee-slow space-x-8">
           {duplicatedContributors.map((contributor, index) => (

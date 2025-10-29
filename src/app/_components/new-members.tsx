@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/table"
 import { Users } from "lucide-react"
 import { useEffect, useState } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
+
 
 const initialMembers = [
     { amount: "R$10,00", name: "Kaiq", age: "19", state: "SP", skills: "automação N8N", partnership: "Sim" },
@@ -28,8 +30,8 @@ const initialMembers = [
 type Member = typeof initialMembers[0] & { entryDate: string };
 
 export function NewMembers() {
-  const [yesterday, setYesterday] = useState('');
   const [members, setMembers] = useState<Member[]>([]);
+  const [yesterday, setYesterday] = useState('');
 
   useEffect(() => {
     const today = new Date();
@@ -117,7 +119,13 @@ export function NewMembers() {
         </Table>
       </div>
       <p className="mt-4 text-lg font-semibold text-accent font-headline">Garanta sua vaga no lote 2!</p>
-      <p className="text-sm text-muted-foreground mt-1">{yesterday ? `(atualizado em ${yesterday})` : ''}</p>
+      {yesterday ? (
+        <p className="text-sm text-muted-foreground mt-1">{`(atualizado em ${yesterday})`}</p>
+      ) : (
+        <div className="flex justify-center mt-1">
+          <Skeleton className="h-5 w-40" />
+        </div>
+      )}
     </div>
   );
 }
