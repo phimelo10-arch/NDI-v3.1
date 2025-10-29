@@ -70,10 +70,6 @@ export function NewMembers() {
 
   }, []);
 
-  if (members.length === 0) {
-    // Render a placeholder or nothing while waiting for client-side rendering
-    return null;
-  }
 
   return (
     <div className="w-full max-w-6xl mt-20 text-center">
@@ -96,17 +92,27 @@ export function NewMembers() {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {members.map((member, index) => (
-              <TableRow key={index} className="text-center">
-                <TableCell>{member.entryDate}</TableCell>
-                <TableCell className="font-bold text-accent bg-accent/10">{member.amount}</TableCell>
-                <TableCell>{member.name}</TableCell>
-                <TableCell>{member.age}</TableCell>
-                <TableCell>{member.state}</TableCell>
-                <TableCell>{member.skills}</TableCell>
-                <TableCell>{member.partnership}</TableCell>
-              </TableRow>
-            ))}
+            {members.length > 0 ? (
+                members.map((member, index) => (
+                  <TableRow key={index} className="text-center">
+                    <TableCell>{member.entryDate}</TableCell>
+                    <TableCell className="font-bold text-accent bg-accent/10">{member.amount}</TableCell>
+                    <TableCell>{member.name}</TableCell>
+                    <TableCell>{member.age}</TableCell>
+                    <TableCell>{member.state}</TableCell>
+                    <TableCell>{member.skills}</TableCell>
+                    <TableCell>{member.partnership}</TableCell>
+                  </TableRow>
+                ))
+            ) : (
+                initialMembers.map((_, index) => (
+                    <TableRow key={index}>
+                        <TableCell colSpan={7} className="h-12 text-center">
+                            <div className="animate-pulse bg-muted/50 h-6 rounded-md"></div>
+                        </TableCell>
+                    </TableRow>
+                ))
+            )}
           </TableBody>
         </Table>
       </div>
