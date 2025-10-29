@@ -25,14 +25,14 @@ export function Pricing() {
       </div>
       <div>
         <p className="text-sm text-muted-foreground mb-1">"network dos irmãos 💰💸" - marketing digital</p>
-        <h3 className="text-xl md:text-2xl font-bold mt-4 font-headline" style={{ color: '#4DB8FF' }}>Após 100 membros - R$37 no pix</h3>
+        <h3 className="text-xl md:text-2xl font-bold mt-4 font-headline text-primary">Após 100 membros - R$37 no pix</h3>
       </div>
       <div className="space-y-4 mt-8">
         <Card className="border-accent shadow-lg shadow-accent/20">
           <CardContent className="p-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="text-left">
-                <p className="font-bold font-headline">Lote 2: R$10,00</p>
+                <p className="font-bold font-headline">Lote 2: R$12,00</p>
                 <p className="text-sm text-accent flex items-center gap-2">
                   <span className="relative flex h-3 w-3">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>

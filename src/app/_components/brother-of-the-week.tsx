@@ -13,7 +13,7 @@ export function BrotherOfTheWeek() {
       <div className="flex justify-center mb-4">
         <Trophy className="h-8 w-8 text-yellow-400" />
       </div>
-      <h2 className="text-2xl font-bold mb-8 font-headline" style={{ color: '#4DB8FF' }}>Irmão da SEMANA</h2>
+      <h2 className="text-2xl font-bold mb-8 font-headline text-primary">Irmão da SEMANA</h2>
       <Card className="bg-card border-accent shadow-lg shadow-accent/20">
         <CardContent className="p-8">
           <Image

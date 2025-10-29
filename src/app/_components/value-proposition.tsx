@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { ChevronDown } from 'lucide-react';
-import { Card, CardHeader, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import placeholderData from '@/lib/placeholder-images.json';
 
 const whatsappIcon = placeholderData.placeholderImages.find(p => p.id === 'whatsapp-icon');
@@ -22,7 +22,7 @@ export function ValueProposition() {
       </div>
       <p className="text-accent text-sm">Aqui, ninguém solta a mão de ninguém!</p>
       <p className="font-bold text-xl md:text-2xl font-headline">
-        <span className="font-bold" style={{ color: '#4DB8FF' }}>A missão é um AJUDAR o OUTRO ta lgd?</span>
+        <span className="font-bold text-primary">A missão é um AJUDAR o OUTRO ta lgd?</span>
       </p>
       <p>
         Aqui é todo mundo no corre, na luta... mas com sorriso no rosto, por que a gente sabe que <span className="font-bold">UMA HORA VAI DAR CERTO.</span>
@@ -55,11 +55,11 @@ export function ValueProposition() {
           <ul className="list-disc list-inside space-y-2 mt-4">
             {targetAudience.map((item, index) => (
               <li key={index}>
-                <span className="font-bold" style={{ color: '#4DB8FF' }}>{item.text}</span>{item.highlight}
+                <span className="font-bold text-primary">{item.text}</span>{item.highlight}
               </li>
             ))}
           </ul>
-          <p id="the-rule" className="font-bold text-center pt-4 text-xl md:text-2xl font-headline" style={{ color: '#4DB8FF' }}>A ÚNICA REGRA É:</p>
+          <p id="the-rule" className="font-bold text-center pt-4 text-xl md:text-2xl font-headline text-primary">A ÚNICA REGRA É:</p>
           <p className="text-center font-semibold">UM AJUDANDO O OUTRO. SEMPRE!</p>
           <p className="text-center text-sm text-muted-foreground">Sem individualismo. Sem estrelismo.</p>
         </CardContent>

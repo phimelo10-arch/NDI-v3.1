@@ -72,7 +72,7 @@ export function NewMembers() {
       <div className="flex justify-center mb-4">
         <Users className="h-8 w-8 text-muted-foreground" />
       </div>
-      <h2 className="text-2xl font-bold mb-2 font-headline" style={{ color: '#4DB8FF' }}>membros recém chegados</h2>
+      <h2 className="text-2xl font-bold mb-2 font-headline text-primary">membros recém chegados</h2>
       <p className="text-sm text-foreground mb-8">(atualizado a cada três dias)</p>
       <div className="overflow-x-auto rounded-lg border border-border">
         <Table>
