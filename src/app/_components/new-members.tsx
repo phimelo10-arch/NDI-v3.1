@@ -32,8 +32,11 @@ type Member = typeof initialMembers[0] & { entryDate: string };
 export function NewMembers() {
   const [members, setMembers] = useState<Member[]>([]);
   const [yesterday, setYesterday] = useState('');
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
+    
     const today = new Date();
     // Set to Brasília time zone (UTC-3)
     today.setUTCHours(today.getUTCHours() - 3);
@@ -94,7 +97,15 @@ export function NewMembers() {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {members.length > 0 ? (
+            {!isClient ? (
+                Array.from({ length: initialMembers.length }).map((_, index) => (
+                    <TableRow key={index}>
+                        <TableCell colSpan={7}>
+                            <Skeleton className="h-6 w-full" />
+                        </TableCell>
+                    </TableRow>
+                ))
+            ) : (
                 members.map((member, index) => (
                   <TableRow key={index} className="text-center">
                     <TableCell>{member.entryDate}</TableCell>
@@ -105,14 +116,6 @@ export function NewMembers() {
                     <TableCell>{member.skills}</TableCell>
                     <TableCell>{member.partnership}</TableCell>
                   </TableRow>
-                ))
-            ) : (
-                initialMembers.map((_, index) => (
-                    <TableRow key={index}>
-                        <TableCell colSpan={7}>
-                            <Skeleton className="h-6 w-full" />
-                        </TableCell>
-                    </TableRow>
                 ))
             )}
           </TableBody>
