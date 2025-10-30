@@ -1,3 +1,6 @@
+git add .
+git commit -m "mensagem da atualização"
+git push
 # Firebase Studio
 
 This is a NextJS starter in Firebase Studio.
