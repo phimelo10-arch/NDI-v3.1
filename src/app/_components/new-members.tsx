@@ -98,11 +98,15 @@ export function NewMembers() {
           </TableHeader>
           <TableBody>
             {!isClient ? (
-                Array.from({ length: initialMembers.length }).map((_, index) => (
+                Array.from({ length: 5 }).map((_, index) => (
                     <TableRow key={index}>
-                        <TableCell colSpan={7}>
-                            <Skeleton className="h-6 w-full" />
-                        </TableCell>
+                        <TableCell><Skeleton className="h-5 w-24 mx-auto" /></TableCell>
+                        <TableCell><Skeleton className="h-5 w-20 mx-auto" /></TableCell>
+                        <TableCell><Skeleton className="h-5 w-24 mx-auto" /></TableCell>
+                        <TableCell><Skeleton className="h-5 w-10 mx-auto" /></TableCell>
+                        <TableCell><Skeleton className="h-5 w-10 mx-auto" /></TableCell>
+                        <TableCell><Skeleton className="h-5 w-32 mx-auto" /></TableCell>
+                        <TableCell><Skeleton className="h-5 w-16 mx-auto" /></TableCell>
                     </TableRow>
                 ))
             ) : (
@@ -122,13 +126,15 @@ export function NewMembers() {
         </Table>
       </div>
       <p className="mt-4 text-lg font-semibold text-accent font-headline">Garanta sua vaga no lote 2!</p>
-      {yesterday ? (
-        <p className="text-sm text-muted-foreground mt-1">{`(atualizado em ${yesterday})`}</p>
-      ) : (
-        <div className="flex justify-center mt-1">
+      
+      <div className="text-sm text-muted-foreground mt-1 h-5 flex justify-center items-center">
+        {yesterday ? (
+          <span>{`(atualizado em ${yesterday})`}</span>
+        ) : (
           <Skeleton className="h-5 w-40" />
-        </div>
-      )}
+        )}
+      </div>
+
     </div>
   );
 }

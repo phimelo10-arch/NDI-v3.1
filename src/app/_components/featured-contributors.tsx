@@ -40,13 +40,15 @@ export function FeaturedContributors() {
         <ChevronDown className="h-8 w-8 text-muted-foreground" />
       </div>
       <h3 className="font-bold mb-2 text-xl md:text-2xl font-headline text-center text-primary">Irmãos QUE MAIS AJUDARAM na última semana</h3>
-      {yesterday ? (
-        <p className="text-sm text-muted-foreground mb-6 text-center">{`(atualizado em ${yesterday})`}</p>
-      ) : (
-        <div className="flex justify-center mb-6">
+      
+      <div className="text-sm text-muted-foreground mb-6 text-center h-5 flex justify-center items-center">
+        {yesterday ? (
+          <span>{`(atualizado em ${yesterday})`}</span>
+        ) : (
           <Skeleton className="h-5 w-40" />
-        </div>
-      )}
+        )}
+      </div>
+
       <div className="relative w-full overflow-hidden">
         <div className="flex animate-marquee-slow space-x-8">
           {duplicatedContributors.map((contributor, index) => (
