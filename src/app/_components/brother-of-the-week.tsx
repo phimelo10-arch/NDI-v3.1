@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Trophy } from 'lucide-react';
 import placeholderData from '@/lib/placeholder-images.json';
 
-const brotherOfTheWeekImage = placeholderData.placeholderImages.find(p => p.id === 'profile-danilojuliao-large');
+const brotherOfTheWeekImage = placeholderData.placeholderImages.find(p => p.id === 'profile-juniorsantander');
 
 export function BrotherOfTheWeek() {
   if (!brotherOfTheWeekImage) return null;
@@ -24,7 +24,7 @@ export function BrotherOfTheWeek() {
             height={120}
             className="rounded-full object-cover border-4 border-accent mx-auto"
           />
-          <p className="text-xl font-bold text-foreground mt-4 font-headline">@danilojuliao_</p>
+          <p className="text-xl font-bold text-foreground mt-4 font-headline">@juniorsantander</p>
           <div className="mt-8 text-left bg-background/50 p-6 rounded-lg">
             <p className="font-bold text-primary text-lg mb-2 font-headline">Palavras do Presidente:</p>
             <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground whitespace-pre-line">
