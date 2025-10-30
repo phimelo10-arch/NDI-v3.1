@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
-import { Manrope } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 import Script from 'next/script';
 
-const manrope = Manrope({
+const roboto = Roboto({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-manrope',
+  variable: '--font-roboto',
+  weight: ['400', '700']
 });
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`dark ${manrope.variable}`}>
+    <html lang="pt-BR" className={`dark ${roboto.variable}`}>
       <head>
       </head>
       <body className="font-body antialiased">
