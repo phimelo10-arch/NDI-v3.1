@@ -98,7 +98,7 @@ export function NewMembers() {
           </TableHeader>
           <TableBody>
             {!isClient ? (
-                Array.from({ length: 5 }).map((_, index) => (
+                Array.from({ length: initialMembers.length }).map((_, index) => (
                     <TableRow key={index}>
                         <TableCell><Skeleton className="h-5 w-24 mx-auto" /></TableCell>
                         <TableCell><Skeleton className="h-5 w-20 mx-auto" /></TableCell>
@@ -128,10 +128,10 @@ export function NewMembers() {
       <p className="mt-4 text-lg font-semibold text-accent font-headline">Garanta sua vaga no lote 2!</p>
       
       <div className="text-sm text-muted-foreground mt-1 h-5 flex justify-center items-center">
-        {yesterday ? (
-          <span>{`(atualizado em ${yesterday})`}</span>
-        ) : (
+        {!isClient ? (
           <Skeleton className="h-5 w-40" />
+        ) : (
+          <span>{`(atualizado em ${yesterday})`}</span>
         )}
       </div>
 
