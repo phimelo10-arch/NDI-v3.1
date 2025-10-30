@@ -33,10 +33,10 @@ export function Pricing() {
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="text-left">
                 <p className="font-bold font-headline">Lote 2: R$14,00</p>
-                <p className="text-sm text-accent flex items-center gap-2">
+                <p className="text-sm text-gold flex items-center gap-2">
                   <span className="relative flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-gold"></span>
                   </span>
                   ABERTO AGORA
                 </p>
