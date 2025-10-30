@@ -87,13 +87,13 @@ export function NewMembers() {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead className="text-center text-primary">data_entrada</TableHead>
-              <TableHead className="text-center text-primary">valor_pago</TableHead>
-              <TableHead className="text-center text-primary">nome</TableHead>
-              <TableHead className="text-center text-primary">idade</TableHead>
-              <TableHead className="text-center text-primary">estado</TableHead>
-              <TableHead className="text-center text-primary">skills</TableHead>
-              <TableHead className="text-center text-primary">aceita_sociedade</TableHead>
+              <TableHead className="text-center text-gold">data_entrada</TableHead>
+              <TableHead className="text-center text-gold">valor_pago</TableHead>
+              <TableHead className="text-center text-gold">nome</TableHead>
+              <TableHead className="text-center text-gold">idade</TableHead>
+              <TableHead className="text-center text-gold">estado</TableHead>
+              <TableHead className="text-center text-gold">skills</TableHead>
+              <TableHead className="text-center text-gold">aceita_sociedade</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -113,7 +113,7 @@ export function NewMembers() {
                 members.map((member, index) => (
                   <TableRow key={index} className="text-center">
                     <TableCell>{member.entryDate}</TableCell>
-                    <TableCell className="font-bold text-accent bg-accent/10">{member.amount}</TableCell>
+                    <TableCell className="font-bold text-gold bg-gold/10">{member.amount}</TableCell>
                     <TableCell>{member.name}</TableCell>
                     <TableCell>{member.age}</TableCell>
                     <TableCell>{member.state}</TableCell>
@@ -125,7 +125,7 @@ export function NewMembers() {
           </TableBody>
         </Table>
       </div>
-      <p className="mt-4 text-lg font-semibold text-accent font-headline">Garanta sua vaga no lote 2!</p>
+      <p className="mt-4 text-lg font-semibold text-gold font-headline">Garanta sua vaga no lote 2!</p>
       
       <div className="text-sm text-muted-foreground mt-1 h-5 flex justify-center items-center">
         {!isClient ? (
