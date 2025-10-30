@@ -55,7 +55,7 @@ export function Pricing() {
                 <Link href="https://pay.cakto.com.br/jxytgx9">Entrar na Comunidade por R$14</Link>
               </Button>
             </div>
-            <Progress value={progressValue} className="w-full mt-4 h-2" />
+            <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
             <p className="text-sm font-bold text-gold mt-2 text-center">{remainingSpots} vagas restantes</p>
             <p className="text-sm text-muted-foreground text-center mt-2">Após esgotarem, o preço subirá para R$37,00.</p>
           </CardContent>
