@@ -13,27 +13,33 @@
       "imageHint": "discord logo"
     },
     {
-      "id": "profile-carlodeamorim",
-      "description": "@carlodeamorim",
-      "imageUrl": "https://i.imgur.com/IcpWVGv.jpeg",
+      "id": "profile-douglas-cardoso",
+      "description": "@douglas_cardoso.barbeiro",
+      "imageUrl": "https://i.imgur.com/sMuLab7.png",
       "imageHint": "profile photo"
     },
     {
-      "id": "profile-danilojuliao",
-      "description": "@danilojuliao_",
-      "imageUrl": "https://i.imgur.com/ytChM19.jpeg",
+      "id": "profile-silva-ramos",
+      "description": "@silva_ramos73",
+      "imageUrl": "https://i.imgur.com/3ub7kDm.png",
       "imageHint": "profile photo"
     },
     {
-      "id": "profile-mtlucas",
-      "description": "@mtlucas__",
-      "imageUrl": "https://i.imgur.com/kn1qtdn.jpeg",
+      "id": "profile-robert-araujo",
+      "description": "@robert.araujov2",
+      "imageUrl": "https://i.imgur.com/8cCMH7V.png",
       "imageHint": "profile photo"
     },
     {
-      "id": "profile-ferreiirx",
-      "description": "@ferreiirx",
-      "imageUrl": "https://i.imgur.com/dsjse1z.jpeg",
+      "id": "profile-davidiassan",
+      "description": "@davidiassan",
+      "imageUrl": "https://i.imgur.com/4gtb7GZ.png",
+      "imageHint": "profile photo"
+    },
+    {
+      "id": "profile-rafahenricaval",
+      "description": "@_rafahenricaval",
+      "imageUrl": "https://i.imgur.com/xJYct0o.png",
       "imageHint": "profile photo"
     },
     {

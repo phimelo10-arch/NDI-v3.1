@@ -6,10 +6,11 @@ import { useEffect, useState } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
 
 const contributors = [
-  'profile-carlodeamorim',
-  'profile-danilojuliao',
-  'profile-mtlucas',
-  'profile-ferreiirx',
+  'profile-douglas-cardoso',
+  'profile-silva-ramos',
+  'profile-robert-araujo',
+  'profile-davidiassan',
+  'profile-rafahenricaval',
   'profile-gs4nc',
   'profile-gabrielgterra',
   'profile-juniorsantander'
@@ -19,8 +20,10 @@ const duplicatedContributors = [...contributors, ...contributors, ...contributor
 
 export function FeaturedContributors() {
   const [yesterday, setYesterday] = useState('');
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     const today = new Date();
     // Set to Brasília time zone (UTC-3)
     today.setUTCHours(today.getUTCHours() - 3);
@@ -42,10 +45,10 @@ export function FeaturedContributors() {
       <h3 className="font-bold mb-2 text-xl md:text-2xl font-headline text-center text-primary">Irmãos QUE MAIS AJUDARAM na última semana</h3>
       
       <div className="text-sm text-muted-foreground mb-6 text-center h-5 flex justify-center items-center">
-        {yesterday ? (
-          <span>{`(atualizado em ${yesterday})`}</span>
-        ) : (
+        {!isClient ? (
           <Skeleton className="h-5 w-40" />
+        ) : (
+          <span>{`(atualizado em ${yesterday})`}</span>
         )}
       </div>
 
