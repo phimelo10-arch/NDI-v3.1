@@ -63,7 +63,7 @@ export function FeaturedContributors() {
                   data-ai-hint={contributor.imageHint}
                   width={80}
                   height={80}
-                  className="rounded-full object-cover border-2 border-primary"
+                  className="rounded-full object-cover border-2 border-gold"
                 />
                 <p className="text-sm font-semibold text-foreground truncate">{contributor.description}</p>
               </div>
