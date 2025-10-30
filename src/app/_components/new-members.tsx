@@ -109,8 +109,8 @@ export function NewMembers() {
             ) : (
                 initialMembers.map((_, index) => (
                     <TableRow key={index}>
-                        <TableCell colSpan={7} className="h-12 text-center">
-                            <div className="animate-pulse bg-muted/50 h-6 rounded-md"></div>
+                        <TableCell colSpan={7}>
+                            <Skeleton className="h-6 w-full" />
                         </TableCell>
                     </TableRow>
                 ))
