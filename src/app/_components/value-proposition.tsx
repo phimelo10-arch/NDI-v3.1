@@ -51,7 +51,7 @@ export function ValueProposition() {
               />
             )}
           </div>
-          <p className="text-center font-headline">o <span className="text-accent font-bold">NETWORK DOS IRMÃOS</span> é pra quem:</p>
+          <p className="text-center font-headline">o <span className="text-gold font-bold">NETWORK DOS IRMÃOS</span> é pra quem:</p>
           <ul className="list-disc list-inside space-y-2 mt-4">
             {targetAudience.map((item, index) => (
               <li key={index}>
