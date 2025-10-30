@@ -51,7 +51,7 @@ export function Pricing() {
               ))}
             </ul>
             <div className="w-full mt-4">
-              <Button asChild size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg font-bold">
+              <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold">
                 <Link href="https://pay.cakto.com.br/jxytgx9">Entrar na Comunidade por R$14</Link>
               </Button>
             </div>
