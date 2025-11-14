@@ -32,7 +32,7 @@ export function Pricing() {
           <CardContent className="p-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="text-left">
-                <p className="font-bold font-headline">Lote 2: R$17,00</p>
+                <p className="font-bold font-headline">Lote 2: R$18,00</p>
                 <p className="text-sm text-gold flex items-center gap-2">
                   <span className="relative flex h-3 w-3">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
@@ -52,7 +52,7 @@ export function Pricing() {
             </ul>
             <div className="w-full mt-4">
               <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold">
-                <Link href="https://pay.cakto.com.br/jxytgx9">Entrar na Comunidade por R$17</Link>
+                <Link href="https://pay.cakto.com.br/jxytgx9">Entrar na Comunidade por R$18</Link>
               </Button>
             </div>
             <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
