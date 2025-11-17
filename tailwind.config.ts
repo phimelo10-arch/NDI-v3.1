@@ -93,11 +93,22 @@ export default {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-50%)' },
         },
+        'pulse-dopamine': {
+          '0%, 100%': {
+            transform: 'scale(1)',
+            boxShadow: '0 0 0 0px hsl(45 100% 65% / 0.7)',
+          },
+          '50%': {
+            transform: 'scale(1.02)',
+            boxShadow: '0 0 0 10px hsl(45 100% 65% / 0)',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'marquee-slow': 'marquee 40s linear infinite',
+        'pulse-dopamine': 'pulse-dopamine 2s infinite',
       },
     },
   },
