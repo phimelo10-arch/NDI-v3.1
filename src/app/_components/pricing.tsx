@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -17,7 +19,19 @@ const remainingSpots = 17;
 const filledSpots = totalSpots - remainingSpots;
 const progressValue = (filledSpots / totalSpots) * 100;
 
+declare global {
+  interface Window {
+    fbq: (...args: any[]) => void;
+  }
+}
+
 export function Pricing() {
+  const handleAddToCart = () => {
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'AddToCart');
+    }
+  };
+
   return (
     <div className="space-y-4 my-12">
       <div className="flex justify-center my-4">
@@ -51,7 +65,7 @@ export function Pricing() {
               ))}
             </ul>
             <div className="w-full mt-4">
-              <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold">
+              <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold" onClick={handleAddToCart}>
                 <Link href="https://pay.cakto.com.br/jxytgx9">Entrar na Comunidade por R$18</Link>
               </Button>
             </div>
