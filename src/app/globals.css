@@ -70,3 +70,26 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .animated-progress-bar {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1) 10px,
+      transparent 10px,
+      transparent 20px
+    );
+    background-size: 200% 100%;
+    animation: progress-animation 2s linear infinite;
+  }
+}
+
+@keyframes progress-animation {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
