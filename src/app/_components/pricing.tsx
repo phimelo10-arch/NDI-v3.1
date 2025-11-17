@@ -66,7 +66,7 @@ export function Pricing() {
             </ul>
             <div className="w-full mt-4">
               <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
-                <Link href="https://pay.cakto.com.br/jxytgx9">Entrar na Comunidade por R$18</Link>
+                <Link href="https://pay.cakto.com.br/jxytgx9_651328">Entrar na Comunidade por R$18</Link>
               </Button>
             </div>
             <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
