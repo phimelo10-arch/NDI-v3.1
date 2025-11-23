@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Handshake, Shield } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import placeholderData from '@/lib/placeholder-images.json';
 
@@ -27,7 +27,13 @@ export function ValueProposition() {
       <p>
         Aqui é todo mundo no corre, na luta... mas com sorriso no rosto, por que a gente sabe que <span className="font-bold">UMA HORA VAI DAR CERTO.</span>
       </p>
-      <Card className="text-left bg-card p-6 shadow-sm border my-6">
+      <Card className="text-left bg-card p-6 shadow-sm border my-6 relative overflow-hidden">
+        <div className="absolute -top-1 -right-1 opacity-20">
+            <div className="relative transform rotate-12">
+                <Shield className="h-24 w-24 text-gold" fill="currentColor" />
+                <Handshake className="h-12 w-12 text-background absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            </div>
+        </div>
         <CardContent className="p-0">
           <div className="flex justify-center items-center space-x-4 mb-4">
             {whatsappIcon && (
