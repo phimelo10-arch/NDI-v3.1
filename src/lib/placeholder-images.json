@@ -13,45 +13,9 @@
       "imageHint": "discord logo"
     },
     {
-      "id": "profile-douglas-cardoso",
-      "description": "@douglas_cardoso.barbeiro",
-      "imageUrl": "https://i.imgur.com/sMuLab7.png",
-      "imageHint": "profile photo"
-    },
-    {
-      "id": "profile-silva-ramos",
-      "description": "@silva_ramos73",
-      "imageUrl": "https://i.imgur.com/3ub7kDm.png",
-      "imageHint": "profile photo"
-    },
-    {
       "id": "profile-robert-araujo",
       "description": "@robert.araujov2",
       "imageUrl": "https://i.imgur.com/8cCMH7V.png",
-      "imageHint": "profile photo"
-    },
-    {
-      "id": "profile-davidiassan",
-      "description": "@davidiassan",
-      "imageUrl": "https://i.imgur.com/4gtb7GZ.png",
-      "imageHint": "profile photo"
-    },
-    {
-      "id": "profile-rafahenricaval",
-      "description": "@_rafahenricaval",
-      "imageUrl": "https://i.imgur.com/xJYct0o.png",
-      "imageHint": "profile photo"
-    },
-    {
-      "id": "profile-gs4nc",
-      "description": "@g.s4nc",
-      "imageUrl": "https://i.imgur.com/U4j6wEj.jpeg",
-      "imageHint": "profile photo"
-    },
-    {
-      "id": "profile-gabrielgterra",
-      "description": "@gabrielgterra",
-      "imageUrl": "https://i.imgur.com/sg1jXGn.jpeg",
       "imageHint": "profile photo"
     },
     {
@@ -107,6 +71,36 @@
       "description": "Introdução da comunidade",
       "imageUrl": "https://i.imgur.com/397qKZd.png",
       "imageHint": "community intro"
+    },
+    {
+      "id": "profile-kaliellucas",
+      "description": "@_kaliellucas_",
+      "imageUrl": "https://i.imgur.com/70ubGud.png",
+      "imageHint": "profile photo"
+    },
+    {
+      "id": "profile-eufernando",
+      "description": "@eu.fernaando",
+      "imageUrl": "https://i.imgur.com/rEtLMjW.jpeg",
+      "imageHint": "profile photo"
+    },
+    {
+      "id": "profile-eulofs",
+      "description": "@eulofs",
+      "imageUrl": "https://i.imgur.com/dCAmozY.jpeg",
+      "imageHint": "profile photo"
+    },
+    {
+      "id": "profile-loqtrade",
+      "description": "@loq_trade",
+      "imageUrl": "https://i.imgur.com/eQN70iP.jpeg",
+      "imageHint": "profile photo"
+    },
+    {
+      "id": "profile-pedrokads",
+      "description": "@pedrok.ads",
+      "imageUrl": "https://i.imgur.com/bYbyFc9.png",
+      "imageHint": "profile photo"
     }
   ]
 }

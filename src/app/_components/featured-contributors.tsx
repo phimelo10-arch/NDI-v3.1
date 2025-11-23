@@ -6,14 +6,13 @@ import { useEffect, useState } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
 
 const contributors = [
-  'profile-douglas-cardoso',
-  'profile-silva-ramos',
+  'profile-juniorsantander',
   'profile-robert-araujo',
-  'profile-davidiassan',
-  'profile-rafahenricaval',
-  'profile-gs4nc',
-  'profile-gabrielgterra',
-  'profile-juniorsantander'
+  'profile-kaliellucas',
+  'profile-eufernando',
+  'profile-eulofs',
+  'profile-loqtrade',
+  'profile-pedrokads'
 ].map(id => placeholderData.placeholderImages.find(p => p.id === id)).filter(Boolean);
 
 const duplicatedContributors = [...contributors, ...contributors, ...contributors, ...contributors];
