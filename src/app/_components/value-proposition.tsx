@@ -11,7 +11,6 @@ const targetAudience = [
     { text: "é INTELIGENTE pra krl", highlight: ", mas não consegue tirar nada no Papel, pq pensa MUITO e é perfeccionista dms" },
     { text: "É iniciante", highlight: ", e quer entrar no grupo pra ir aprendendo com a galera." },
     { text: "Precisa de sócio", highlight: " (por falta de verba ou porque não dá pra fazer tudo sozinho)." },
-    { text: "Já fatura bem no digital", highlight: ", e busca prestadores de serviço. (design gráfico, automação, criação de páginas, etc.)." },
 ];
 
 export function ValueProposition() {
