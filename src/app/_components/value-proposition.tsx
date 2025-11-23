@@ -28,11 +28,8 @@ export function ValueProposition() {
         Aqui é todo mundo no corre, na luta... mas com sorriso no rosto, por que a gente sabe que <span className="font-bold">UMA HORA VAI DAR CERTO.</span>
       </p>
       <Card className="text-left bg-card p-6 shadow-sm border my-6 relative overflow-hidden">
-        <div className="absolute -top-1 -right-1 opacity-20">
-            <div className="relative transform rotate-12">
-                <Shield className="h-24 w-24 text-gold" fill="currentColor" />
-                <Handshake className="h-12 w-12 text-background absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-            </div>
+        <div className="absolute top-4 -right-10 transform rotate-45 bg-foreground/80 px-8 py-1">
+            <span className="font-bold text-gold text-sm tracking-widest">COMUNIDADE</span>
         </div>
         <CardContent className="p-0">
           <div className="flex justify-center items-center space-x-4 mb-4">
