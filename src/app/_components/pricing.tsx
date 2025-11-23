@@ -71,7 +71,7 @@ export function Pricing() {
             </div>
             <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
             <p className="text-sm font-bold text-gold mt-2 text-center">{remainingSpots} vagas restantes</p>
-            <p className="text-sm text-muted-foreground text-center mt-2">Após esgotarem, o preço subirá para R$37,00.</p>
+            <p className="text-sm text-muted-foreground text-center mt-2">Após esgotarem, o preço subirá para R$47,00.</p>
           </CardContent>
         </Card>
 
