@@ -61,6 +61,7 @@ export function ValueProposition() {
               </li>
             ))}
           </ul>
+          <hr className="my-6 border-dashed border-border" />
           <p id="the-rule" className="font-bold text-center pt-4 text-xl md:text-2xl font-headline text-primary">A ÚNICA REGRA É:</p>
           <p className="text-center font-semibold">UM AJUDANDO O OUTRO. SEMPRE!</p>
           <p className="text-center text-sm text-muted-foreground">Sem individualismo. Sem estrelismo.</p>
