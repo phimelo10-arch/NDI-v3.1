@@ -83,7 +83,6 @@ export function Pricing() {
         <Card className="border-accent shadow-lg shadow-accent/20">
           <CardHeader className="pt-6 pb-4 text-center">
             <div className="mb-2">
-              <p className="font-bold font-headline">Lote 2: R$18,00</p>
               <p className="text-sm text-gold flex items-center justify-center gap-2">
                 <span className="relative flex h-3 w-3">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
@@ -91,6 +90,7 @@ export function Pricing() {
                 </span>
                 ABERTO AGORA
               </p>
+              <p className="font-bold font-headline">Lote 2: R$18,00</p>
             </div>
              <div className='px-6'>
                 <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
