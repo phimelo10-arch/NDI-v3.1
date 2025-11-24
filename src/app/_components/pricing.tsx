@@ -92,7 +92,11 @@ export function Pricing() {
                 ABERTO AGORA
               </p>
             </div>
-            <hr className="border-dashed border-border" />
+             <div className='px-6'>
+                <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
+                <p className="text-sm font-bold text-gold mt-2 text-center">{remainingSpots} vagas restantes</p>
+            </div>
+            <hr className="border-dashed border-border mt-4" />
           </CardHeader>
           <CardContent className="p-6 pt-0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-left mb-6">
@@ -142,8 +146,6 @@ export function Pricing() {
                         <span>7 Dias de Garantia</span>
                     </div>
                 </div>
-                <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
-                <p className="text-sm font-bold text-gold mt-2 text-center">{remainingSpots} vagas restantes</p>
             </div>
           </CardContent>
         </Card>
