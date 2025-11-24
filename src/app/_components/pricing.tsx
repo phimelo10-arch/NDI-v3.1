@@ -94,6 +94,9 @@ export function Pricing() {
         <h3 className="text-xl md:text-2xl font-bold mt-4 font-headline text-primary">Lote 3 (Após 300 membros): R$47 no pix</h3>
       </div>
       <div className="space-y-4 mt-8">
+        <div className="text-center">
+            <p className="text-lg font-bold text-gold animate-pulse">APROVEITE O LOTE 2 AGORA:</p>
+        </div>
         <Card className="border-accent shadow-lg shadow-accent/20">
           <CardHeader className="pt-6 pb-2">
             <CardTitle className="flex items-center justify-center gap-2 text-xl font-headline text-foreground">
