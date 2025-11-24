@@ -109,30 +109,7 @@ export function Pricing() {
             </CardTitle>
           </CardHeader>
           <CardContent className="p-6">
-            <div className="bg-background/50 border border-border rounded-lg p-4 mb-6">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                  <div className="text-left">
-                    <p className="font-bold font-headline">Lote 2: R$18,00</p>
-                    <p className="text-sm text-gold flex items-center gap-2">
-                      <span className="relative flex h-3 w-3">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-3 w-3 bg-gold"></span>
-                      </span>
-                      ABERTO AGORA
-                    </p>
-                  </div>
-                </div>
-                <div className="w-full mt-4">
-                  <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
-                    <Link href="https://pay.cakto.com.br/jxytgx9_651328">Receber tudo por apenas R$18</Link>
-                  </Button>
-                </div>
-                <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
-                <p className="text-sm font-bold text-gold mt-2 text-center">{remainingSpots} vagas restantes</p>
-                <p className="text-xs text-muted-foreground text-center mt-1">Após esgotarem, o preço subirá para R$47,00.</p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-left">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-left mb-6">
               <div>
                 <ul className="space-y-3">
                   {communityFeatures.map((feature, index) => (
@@ -158,7 +135,29 @@ export function Pricing() {
                 </ul>
               </div>
             </div>
-            
+
+            <div className="bg-background/50 border border-border rounded-lg p-4 mb-6">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                  <div className="text-left">
+                    <p className="font-bold font-headline">Lote 2: R$18,00</p>
+                    <p className="text-sm text-gold flex items-center gap-2">
+                      <span className="relative flex h-3 w-3">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-3 w-3 bg-gold"></span>
+                      </span>
+                      ABERTO AGORA
+                    </p>
+                  </div>
+                </div>
+                <div className="w-full mt-4">
+                  <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
+                    <Link href="https://pay.cakto.com.br/jxytgx9_651328">Receber tudo por apenas R$18</Link>
+                  </Button>
+                </div>
+                <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
+                <p className="text-sm font-bold text-gold mt-2 text-center">{remainingSpots} vagas restantes</p>
+                <p className="text-xs text-muted-foreground text-center mt-1">Após esgotarem, o preço subirá para R$47,00.</p>
+            </div>
           </CardContent>
         </Card>
 
