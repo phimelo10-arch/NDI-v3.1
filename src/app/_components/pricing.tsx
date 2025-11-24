@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { CheckSquare, ChevronDown, Hourglass, Package, ShieldCheck, Infinity, BadgeCheck } from 'lucide-react';
+import { CheckSquare, ChevronDown, Hourglass, Package, ShieldCheck, Infinity, BadgeCheck, ArrowRight } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { communityFeatures, toolsFeatures } from '@/lib/features';
 
@@ -129,7 +129,10 @@ export function Pricing() {
             <div className="bg-background/50 border border-border rounded-lg p-4">
                 <div className="w-full">
                   <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
-                    <Link href="https://pay.cakto.com.br/jxytgx9_651328">Receber tudo por apenas R$18</Link>
+                    <Link href="https://pay.cakto.com.br/jxytgx9_651328">
+                      Quero ser um irmão por R$18
+                      <ArrowRight className="h-5 w-5 ml-2" />
+                    </Link>
                   </Button>
                 </div>
                 <div className="flex justify-center items-center gap-4 mt-4 text-xs text-muted-foreground">
