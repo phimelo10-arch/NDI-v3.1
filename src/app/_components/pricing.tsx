@@ -158,6 +158,7 @@ export function Pricing() {
               </p>
             </div>
             <CardTitle className="text-xl font-headline">Lote 3: R$31,00</CardTitle>
+            <p className="text-xs">Disponível assim que o Lote 2 esgotar.</p>
           </CardHeader>
         </Card>
       </div>
