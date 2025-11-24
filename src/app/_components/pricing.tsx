@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { Check, ChevronDown, Hourglass } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
 
 const features = [
   "Grupo no WhatsApp",
@@ -15,9 +16,8 @@ const features = [
 ];
 
 const totalSpots = 50;
-const remainingSpots = 17;
-const filledSpots = totalSpots - remainingSpots;
-const progressValue = (filledSpots / totalSpots) * 100;
+const initialRemainingSpots = 17;
+
 
 declare global {
   interface Window {
@@ -26,14 +26,54 @@ declare global {
 }
 
 export function Pricing() {
+  const [remainingSpots, setRemainingSpots] = useState(initialRemainingSpots);
+  const [progressValue, setProgressValue] = useState(((totalSpots - initialRemainingSpots) / totalSpots) * 100);
+  const animationTriggered = useRef(false);
+  const pricingRef = useRef<HTMLDivElement>(null);
+
+
   const handleAddToCart = () => {
     if (typeof window.fbq === 'function') {
       window.fbq('track', 'AddToCart');
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (pricingRef.current && !animationTriggered.current) {
+        const { top } = pricingRef.current.getBoundingClientRect();
+        const triggerPoint = window.innerHeight * 0.8; 
+
+        if (top < triggerPoint) {
+          animationTriggered.current = true;
+          
+          let spots = initialRemainingSpots;
+          const interval = setInterval(() => {
+            spots -= 1;
+            if (spots <= 5) { // Stop at a low number to maintain urgency
+              clearInterval(interval);
+              spots = 5;
+            }
+            setRemainingSpots(spots);
+            const filledSpots = totalSpots - spots;
+            setProgressValue((filledSpots / totalSpots) * 100);
+          }, 2500); // Decrease every 2.5 seconds
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    // Initial check
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="space-y-4 my-12">
+    <div className="space-y-4 my-12" ref={pricingRef}>
       <div className="flex justify-center my-4">
         <ChevronDown className="h-8 w-8 text-muted-foreground" />
       </div>
