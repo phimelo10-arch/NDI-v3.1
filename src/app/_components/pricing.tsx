@@ -94,13 +94,14 @@ export function Pricing() {
         <ChevronDown className="h-8 w-8 text-muted-foreground" />
       </div>
       <div>
-        <p className="text-sm text-muted-foreground mb-1">"network dos irmãos 💰💸" - marketing digital</p>
         <h3 className="text-xl md:text-2xl font-bold mt-4 font-headline text-primary">Lote 3 (Após 300 membros): R$47 no pix</h3>
       </div>
       <div className="space-y-4 mt-8">
         <Card className="border-accent shadow-lg shadow-accent/20">
           <CardHeader className="pt-6 pb-2 text-center">
-            <div className="mb-4">
+          </CardHeader>
+          <CardContent className="p-6">
+            <div className="mb-4 text-center">
               <p className="font-bold font-headline">Lote 2: R$18,00</p>
               <p className="text-sm text-gold flex items-center justify-center gap-2">
                 <span className="relative flex h-3 w-3">
@@ -110,12 +111,6 @@ export function Pricing() {
                 ABERTO AGORA
               </p>
             </div>
-            <CardTitle className="flex items-center justify-center gap-2 text-xl font-headline text-foreground">
-              <Gem className="h-6 w-6 text-gold" />
-              <span>Você recebe no Network dos Irmãos</span>
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="p-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-left mb-6">
               <div>
                 <ul className="space-y-3">
