@@ -19,7 +19,7 @@ export function ValueProposition() {
       <div className="flex justify-center my-4">
         <ChevronDown className="h-8 w-8 text-muted-foreground" />
       </div>
-      <p className="text-gold text-sm">Aqui, ninguém solta a mão de ninguém!</p>
+      <p className="text-gold text-sm animate-pulse">Aqui, ninguém solta a mão de ninguém!</p>
       <p className="font-bold text-xl md:text-2xl font-headline">
         <span className="font-bold text-primary">A missão é um AJUDAR o OUTRO ta lgd?</span>
       </p>
