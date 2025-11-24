@@ -103,6 +103,10 @@ export default {
             boxShadow: '0 0 0 10px hsl(45 100% 65% / 0)',
           },
         },
+        'soft-pulse': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -110,6 +114,7 @@ export default {
         'marquee-slow': 'marquee 40s linear infinite',
         'marquee-fast': 'marquee 20s linear infinite',
         'pulse-dopamine': 'pulse-dopamine 2s infinite',
+        'soft-pulse': 'soft-pulse 2.5s infinite ease-in-out',
       },
     },
   },

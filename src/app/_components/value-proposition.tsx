@@ -39,7 +39,7 @@ export function ValueProposition() {
                 data-ai-hint={whatsappIcon.imageHint}
                 width={40}
                 height={40}
-                className="object-contain"
+                className="object-contain animate-soft-pulse"
               />
             )}
             {discordIcon && (
@@ -49,7 +49,7 @@ export function ValueProposition() {
                 data-ai-hint={discordIcon.imageHint}
                 width={40}
                 height={30}
-                className="object-contain"
+                className="object-contain animate-soft-pulse"
               />
             )}
           </div>
