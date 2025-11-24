@@ -89,7 +89,6 @@ export function Pricing() {
                 </span>
                 ABERTO AGORA
               </p>
-              <p className="font-bold font-headline">Lote 2: R$18,00</p>
             </div>
              <div className='px-6'>
                 <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
