@@ -49,7 +49,7 @@ export function Pricing() {
             setRemainingSpots(spots);
             const filledSpots = totalSpots - spots;
             setProgressValue((filledSpots / totalSpots) * 100);
-          }, 5000); // Decrease every 5 seconds
+          }, 15000); // Decrease every 15 seconds
         }
       },
       {
