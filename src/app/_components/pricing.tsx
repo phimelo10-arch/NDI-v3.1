@@ -102,7 +102,17 @@ export function Pricing() {
             <p className="text-lg font-bold text-gold animate-pulse">APROVEITE O LOTE 2 AGORA:</p>
         </div>
         <Card className="border-accent shadow-lg shadow-accent/20">
-          <CardHeader className="pt-6 pb-2">
+          <CardHeader className="pt-6 pb-2 text-center">
+            <div className="mb-4">
+              <p className="font-bold font-headline">Lote 2: R$18,00</p>
+              <p className="text-sm text-gold flex items-center justify-center gap-2">
+                <span className="relative flex h-3 w-3">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-gold"></span>
+                </span>
+                ABERTO AGORA
+              </p>
+            </div>
             <CardTitle className="flex items-center justify-center gap-2 text-xl font-headline text-foreground">
               <Gem className="h-6 w-6 text-gold" />
               <span>Você recebe no Network dos Irmãos</span>
@@ -136,20 +146,8 @@ export function Pricing() {
               </div>
             </div>
 
-            <div className="bg-background/50 border border-border rounded-lg p-4 mb-6">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                  <div className="text-left">
-                    <p className="font-bold font-headline">Lote 2: R$18,00</p>
-                    <p className="text-sm text-gold flex items-center gap-2">
-                      <span className="relative flex h-3 w-3">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-3 w-3 bg-gold"></span>
-                      </span>
-                      ABERTO AGORA
-                    </p>
-                  </div>
-                </div>
-                <div className="w-full mt-4">
+            <div className="bg-background/50 border border-border rounded-lg p-4">
+                <div className="w-full">
                   <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
                     <Link href="https://pay.cakto.com.br/jxytgx9_651328">Receber tudo por apenas R$18</Link>
                   </Button>
