@@ -5,7 +5,7 @@ export function CommunityIntro() {
         <div className="aspect-w-16 aspect-h-9">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/8l9Z_ODlRk8?controls=0&rel=0&autoplay=1&mute=1"
+            src="https://www.youtube.com/embed/8l9Z_ODlRk8?controls=0&rel=0&autoplay=1"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
