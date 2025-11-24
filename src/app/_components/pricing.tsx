@@ -2,18 +2,30 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { Check, ChevronDown, Hourglass } from 'lucide-react';
+import { Check, ChevronDown, Hourglass, Gem, Globe, Lock, Headphones, Smartphone, Ticket, BrainCircuit, Package, CheckSquare, Dna, Palette, Pin, Plug, Languages } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
-const features = [
-  "Grupo no WhatsApp",
-  "Servidor no Discord",
-  "Calls diárias para tirar suas dúvidas",
-  "Aulas Semanais GRATUITAS sobre infoproduto",
-  "Acesso aos Mentores da Comunidade"
+const communityFeatures = [
+  { icon: Globe, text: "Acesso à Comunidade" },
+  { icon: Lock, text: "Servidor exclusivo no Discord" },
+  { icon: Headphones, text: "Salas 1, 2 e 3 para estudo e networking" },
+  { icon: Smartphone, text: "Link do grupo no WhatsApp (com suporte real)" },
+  { icon: Ticket, text: "Acesso prioritário aos eventos e workshops" },
+  { icon: BrainCircuit, text: "Contato direto com mentores e irmãos experientes" },
 ];
+
+const toolsFeatures = [
+  { icon: CheckSquare, text: "11 VSLs prontas para copiar e vender imediatamente" },
+  { icon: Dna, text: "Clonador de Páginas (copie páginas que vendem)" },
+  { icon: Palette, text: "Pack com +70 criativos profissionais" },
+  { icon: Palette, text: "Pack extra de criativos — Volume 2" },
+  { icon: Pin, text: "Guia para instalar Pixel Cakto (passo a passo)" },
+  { icon: Plug, text: "Fornecedor para comprar seguidores com segurança" },
+  { icon: Languages, text: "Pack PLR em espanhol para criar novos produtos" },
+];
+
 
 const totalSpots = 50;
 const initialRemainingSpots = 17;
@@ -83,35 +95,63 @@ export function Pricing() {
       </div>
       <div className="space-y-4 mt-8">
         <Card className="border-accent shadow-lg shadow-accent/20">
+          <CardHeader className="pt-6 pb-2">
+            <CardTitle className="flex items-center justify-center gap-2 text-xl font-headline text-foreground">
+              <Gem className="h-6 w-6 text-gold" />
+              <span>Você recebe no Network dos Irmãos</span>
+            </CardTitle>
+          </CardHeader>
           <CardContent className="p-6">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <div className="text-left">
-                <p className="font-bold font-headline">Lote 2: R$18,00</p>
-                <p className="text-sm text-gold flex items-center gap-2">
-                  <span className="relative flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-gold"></span>
-                  </span>
-                  ABERTO AGORA
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-left">
+              <div>
+                <ul className="space-y-3">
+                  {communityFeatures.map((feature, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <feature.icon className="h-5 w-5 text-green-500 mt-0.5 shrink-0" />
+                      <span>{feature.text}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="flex items-center gap-3 font-semibold mb-3">
+                  <Package className="h-5 w-5 text-gold" />
+                  Pacote Premium de Ferramentas (7 entregáveis)
                 </p>
+                <ul className="space-y-3">
+                  {toolsFeatures.map((feature, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <feature.icon className="h-5 w-5 text-green-500 mt-0.5 shrink-0" />
+                      <span>{feature.text}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
-            <ul className="space-y-2 text-left mt-4">
-              {features.map((feature, index) => (
-                <li key={index} className="flex items-center gap-2">
-                  <Check className="h-5 w-5 text-green-500" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="w-full mt-4">
-              <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
-                <Link href="https://pay.cakto.com.br/jxytgx9_651328">Entrar na Comunidade por R$18</Link>
-              </Button>
+
+            <div className="mt-8 bg-background/50 border border-border rounded-lg p-4">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                  <div className="text-left">
+                    <p className="font-bold font-headline">Lote 2: R$18,00</p>
+                    <p className="text-sm text-gold flex items-center gap-2">
+                      <span className="relative flex h-3 w-3">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-3 w-3 bg-gold"></span>
+                      </span>
+                      ABERTO AGORA
+                    </p>
+                  </div>
+                </div>
+                <div className="w-full mt-4">
+                  <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
+                    <Link href="https://pay.cakto.com.br/jxytgx9_651328">Entrar na Comunidade por R$18</Link>
+                  </Button>
+                </div>
+                <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
+                <p className="text-sm font-bold text-gold mt-2 text-center">{remainingSpots} vagas restantes</p>
+                <p className="text-xs text-muted-foreground text-center mt-1">Após esgotarem, o preço subirá para R$47,00.</p>
             </div>
-            <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
-            <p className="text-sm font-bold text-gold mt-2 text-center">{remainingSpots} vagas restantes</p>
-            <p className="text-sm text-muted-foreground text-center mt-2">Após esgotarem, o preço subirá para R$47,00.</p>
+            
           </CardContent>
         </Card>
 
