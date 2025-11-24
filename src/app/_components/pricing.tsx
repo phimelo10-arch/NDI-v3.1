@@ -77,7 +77,6 @@ export function Pricing() {
       </div>
       <div>
         <h2 className="text-2xl font-bold mb-4 font-headline text-primary">Quer entrar na nossa comunidade, irmão?</h2>
-        <h3 className="text-xl md:text-2xl font-bold mt-4 font-headline text-primary">Lote 3 (Após 300 membros): R$47 no pix</h3>
       </div>
       <div className="space-y-4 mt-8">
         <Card className="border-accent shadow-lg shadow-accent/20">
@@ -150,22 +149,6 @@ export function Pricing() {
                     </div>
                 </div>
             </div>
-          </CardContent>
-        </Card>
-
-        <div className="flex justify-center my-4">
-          <ChevronDown className="h-8 w-8 text-muted-foreground" />
-        </div>
-
-        <Card id="lote-3" className="bg-muted/30 border-dashed">
-          <CardContent className="p-4 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-left">
-              <p className="font-bold font-headline">Lote 3: R$47,00</p>
-              <p className="text-sm text-muted-foreground flex items-center gap-2">
-                <Hourglass className="h-4 w-4" /> ESPERANDO liberar
-              </p>
-            </div>
-            <Button variant="outline" disabled>Aguardando lote 2 acabar</Button>
           </CardContent>
         </Card>
       </div>
