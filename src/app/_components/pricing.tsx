@@ -76,7 +76,8 @@ export function Pricing() {
         <ChevronDown className="h-8 w-8 text-muted-foreground" />
       </div>
       <div>
-        <h2 className="text-2xl font-bold mb-4 font-headline text-primary">quer COLAR com nós, irmão?</h2>
+        <h2 className="text-2xl font-bold mb-2 font-headline text-primary">quer COLAR com nós, irmão?</h2>
+        <p className="text-muted-foreground mb-8">Vamos sair do CLT, juntos! Vamos aprender a fazer dinheiro com marketing digital!</p>
       </div>
       <div className="space-y-4 mt-8">
         <Card className="border-accent shadow-lg shadow-accent/20">
