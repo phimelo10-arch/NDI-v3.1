@@ -98,10 +98,8 @@ export function Pricing() {
       </div>
       <div className="space-y-4 mt-8">
         <Card className="border-accent shadow-lg shadow-accent/20">
-          <CardHeader className="pt-6 pb-2 text-center">
-          </CardHeader>
-          <CardContent className="p-6">
-            <div className="mb-4 text-center">
+          <CardHeader className="pt-6 pb-4 text-center">
+            <div className="mb-2">
               <p className="font-bold font-headline">Lote 2: R$18,00</p>
               <p className="text-sm text-gold flex items-center justify-center gap-2">
                 <span className="relative flex h-3 w-3">
@@ -111,6 +109,9 @@ export function Pricing() {
                 ABERTO AGORA
               </p>
             </div>
+            <hr className="border-dashed border-border" />
+          </CardHeader>
+          <CardContent className="p-6 pt-0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-left mb-6">
               <div>
                 <ul className="space-y-3">
