@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ChevronDown, Megaphone } from 'lucide-react';
+import { ChevronDown, AlertTriangle } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import placeholderData from '@/lib/placeholder-images.json';
 
@@ -63,7 +63,7 @@ export function ValueProposition() {
           </ul>
           <hr className="my-6 border-dashed border-border" />
           <div className="flex flex-col items-center text-center">
-            <Megaphone className="h-6 w-6 text-primary mb-2" />
+            <AlertTriangle className="h-6 w-6 text-muted-foreground mb-2" />
             <p id="the-rule" className="font-bold text-xl md:text-2xl font-headline text-primary">A ÚNICA REGRA É:</p>
           </div>
           <p className="text-center font-semibold mt-2">UM AJUDANDO O OUTRO. SEMPRE!</p>
