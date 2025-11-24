@@ -17,7 +17,7 @@ export function CommunityIntro() {
           <p className="font-semibold text-2xl font-headline text-primary">Link da minha comunidade</p>
           <p className="text-sm text-muted-foreground">"network dos irmãos 💰💸" - marketing digital</p>
         </div>
-        <p>A gente fica compartilhando <span className="font-bold text-foreground">CADA DETALHE</span> do que estamos fazendo para fazer dinheiro no marketing digital</p>
+        <p>A gente fica compartilhando <span className="font-bold text-foreground">CADA DETALHE</span> do que estamos fazendo para <span className="text-primary font-semibold">fazer dinheiro no marketing digital</span></p>
       </div>
     </>
   );
