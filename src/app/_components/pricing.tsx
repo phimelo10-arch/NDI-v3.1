@@ -82,7 +82,8 @@ export function Pricing() {
         <Card className="border-accent shadow-lg shadow-accent/20">
           <CardHeader className="pt-6 pb-4 text-center">
             <div className="mb-2">
-              <p className="text-sm text-gold flex items-center justify-center gap-2">
+              <p className="text-xs text-muted-foreground uppercase tracking-widest">comunidade - network dos irmãos - marketing digital</p>
+              <p className="text-sm text-gold flex items-center justify-center gap-2 mt-2">
                 <span className="relative flex h-3 w-3">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-gold"></span>
