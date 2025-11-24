@@ -51,12 +51,10 @@ export function Pricing() {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (pricingRef.current && !animationTriggered.current) {
-        const { top } = pricingRef.current.getBoundingClientRect();
-        const triggerPoint = window.innerHeight * 0.8; 
-
-        if (top < triggerPoint) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting && !animationTriggered.current) {
           animationTriggered.current = true;
           
           let spots = initialRemainingSpots;
@@ -71,16 +69,22 @@ export function Pricing() {
             setProgressValue((filledSpots / totalSpots) * 100);
           }, 2500); // Decrease every 2.5 seconds
         }
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the element is visible
       }
-    };
+    );
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    
-    // Initial check
-    handleScroll();
+    const currentRef = pricingRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
     };
   }, []);
 
