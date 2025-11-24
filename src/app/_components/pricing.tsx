@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { CheckSquare, ChevronDown, Hourglass, Package, ShieldCheck, Infinity, BadgeCheck, ArrowRight } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
@@ -123,14 +123,14 @@ export function Pricing() {
                 </ul>
               </div>
             </div>
-
+            
             <div className="w-full">
-              <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
-                <Link href="https://pay.cakto.com.br/jxytgx9_651328">
-                  Quero ser um irmão por R$18
-                  <ArrowRight className="h-5 w-5 ml-2" />
-                </Link>
-              </Button>
+                <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
+                    <Link href="https://pay.cakto.com.br/jxytgx9_651328">
+                    Quero ser um irmão por R$18
+                    <ArrowRight className="h-5 w-5 ml-2" />
+                    </Link>
+                </Button>
             </div>
             <div className="flex justify-center items-center gap-4 mt-4 text-xs text-muted-foreground">
                 <div className="flex items-center gap-1">
@@ -147,6 +147,18 @@ export function Pricing() {
                 </div>
             </div>
           </CardContent>
+        </Card>
+        
+        <Card className="border-border bg-card/50 text-muted-foreground">
+          <CardHeader className="pt-6 pb-4 text-center">
+            <div className="mb-2">
+              <p className="text-sm flex items-center justify-center gap-2">
+                <Hourglass className="h-4 w-4" />
+                AGUARDE
+              </p>
+            </div>
+            <CardTitle className="text-xl font-headline">Lote 3: R$31,00</CardTitle>
+          </CardHeader>
         </Card>
       </div>
     </div>
