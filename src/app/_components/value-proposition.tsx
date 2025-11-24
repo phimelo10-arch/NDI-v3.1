@@ -21,7 +21,7 @@ export function ValueProposition() {
       </div>
       <p className="text-gold text-sm animate-pulse">Aqui, ninguém solta a mão de ninguém!</p>
       <p className="font-bold text-xl md:text-2xl font-headline">
-        <span className="font-bold text-primary">A missão é um AJUDAR o OUTRO ta lgd?</span>
+        <span className="font-bold text-foreground">A missão é um AJUDAR o OUTRO ta lgd?</span>
       </p>
       <p>
         Aqui é todo mundo no corre, na luta... mas com sorriso no rosto, por que a gente sabe que <span className="font-bold">UMA HORA VAI DAR CERTO.</span>
