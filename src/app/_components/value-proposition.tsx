@@ -8,7 +8,7 @@ const discordIcon = placeholderData.placeholderImages.find(p => p.id === 'discor
 
 const targetAudience = [
     { text: "Se sente sozinho", highlight: " e gostaria de trocar ideia sobre ofertas e negócios no digital." },
-    { text: "é INTELIGENTE", highlight: " mas não consegue tirar nada no Papel, pq pensa MUITO e é perfeccionista dms" },
+    { text: "é INTELIGENTE", highlight: " mas não consegue tirar nada no Papel, pq é perfeccionista dms" },
     { text: "É iniciante", highlight: " e quer entrar no grupo pra ir aprendendo com a galera." },
     { text: "Precisa de sócio", highlight: " (por falta de verba ou porque não dá pra fazer tudo sozinho)." },
 ];
