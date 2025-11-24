@@ -57,7 +57,7 @@ export function ValueProposition() {
           <ul className="list-disc list-inside space-y-2 mt-4">
             {targetAudience.map((item, index) => (
               <li key={index}>
-                <span className="font-bold text-primary">{item.text}</span>{item.highlight}
+                <span className="font-bold text-primary">{item.text}</span><span className="text-muted-foreground">{item.highlight}</span>
               </li>
             ))}
           </ul>
