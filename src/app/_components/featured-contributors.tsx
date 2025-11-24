@@ -41,7 +41,7 @@ export function FeaturedContributors() {
       <div className="flex justify-center my-4">
         <ChevronDown className="h-8 w-8 text-muted-foreground" />
       </div>
-      <h3 className="font-bold mb-2 text-xl md:text-2xl font-headline text-center text-primary">Irmãos QUE MAIS AJUDARAM na última semana</h3>
+      <p className="text-base md:text-lg leading-relaxed text-center">Irmãos QUE MAIS AJUDARAM na última semana</p>
       
       <div className="text-sm text-muted-foreground mb-6 text-center h-5 flex justify-center items-center">
         {!isClient ? (
