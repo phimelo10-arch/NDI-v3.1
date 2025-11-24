@@ -4,7 +4,7 @@ export const communityFeatures = [
     { icon: Globe, text: "Acesso à Comunidade" },
     { icon: Lock, text: "Servidor exclusivo no Discord" },
     { icon: Headphones, text: "Salas 1, 2 e 3 para estudo e networking" },
-    { icon: Smartphone, text: "Link do grupo no WhatsApp (com suporte real)" },
+    { icon: Smartphone, text: "Link do grupo no WhatsApp" },
     { icon: Ticket, text: "Acesso prioritário aos eventos e workshops" },
     { icon: BrainCircuit, text: "Contato direto com mentores e irmãos experientes" },
 ];
