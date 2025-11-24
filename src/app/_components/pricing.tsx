@@ -124,28 +124,26 @@ export function Pricing() {
               </div>
             </div>
 
-            <div className="bg-background/50 border border-border rounded-lg p-4">
-                <div className="w-full">
-                  <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
-                    <Link href="https://pay.cakto.com.br/jxytgx9_651328">
-                      Quero ser um irmão por R$18
-                      <ArrowRight className="h-5 w-5 ml-2" />
-                    </Link>
-                  </Button>
+            <div className="w-full">
+              <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
+                <Link href="https://pay.cakto.com.br/jxytgx9_651328">
+                  Quero ser um irmão por R$18
+                  <ArrowRight className="h-5 w-5 ml-2" />
+                </Link>
+              </Button>
+            </div>
+            <div className="flex justify-center items-center gap-4 mt-4 text-xs text-muted-foreground">
+                <div className="flex items-center gap-1">
+                    <ShieldCheck className="h-4 w-4 text-green-500" />
+                    <span>Pagamento Seguro</span>
                 </div>
-                <div className="flex justify-center items-center gap-4 mt-4 text-xs text-muted-foreground">
-                    <div className="flex items-center gap-1">
-                        <ShieldCheck className="h-4 w-4 text-green-500" />
-                        <span>Pagamento Seguro</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                        <Infinity className="h-4 w-4 text-green-500" />
-                        <span>Acesso Vitalício</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                        <BadgeCheck className="h-4 w-4 text-green-500" />
-                        <span>7 Dias de Garantia</span>
-                    </div>
+                <div className="flex items-center gap-1">
+                    <Infinity className="h-4 w-4 text-green-500" />
+                    <span>Acesso Vitalício</span>
+                </div>
+                <div className="flex items-center gap-1">
+                    <BadgeCheck className="h-4 w-4 text-green-500" />
+                    <span>7 Dias de Garantia</span>
                 </div>
             </div>
           </CardContent>
