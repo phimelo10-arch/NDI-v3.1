@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { Check, ChevronDown, Hourglass, Gem, Globe, Lock, Headphones, Smartphone, Ticket, BrainCircuit, Package, CheckSquare, Dna, Palette, Pin, Plug, Languages } from 'lucide-react';
+import { Check, ChevronDown, Hourglass, Gem, Globe, Lock, Headphones, Smartphone, Ticket, BrainCircuit, Package, CheckSquare, Dna, Palette, Pin, Plug, Languages, ShieldCheck, Infinity, BadgeCheck } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
 const communityFeatures = [
@@ -148,6 +148,20 @@ export function Pricing() {
                   <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
                     <Link href="https://pay.cakto.com.br/jxytgx9_651328">Receber tudo por apenas R$18</Link>
                   </Button>
+                </div>
+                <div className="flex justify-center items-center gap-4 mt-4 text-xs text-muted-foreground">
+                    <div className="flex items-center gap-1">
+                        <ShieldCheck className="h-4 w-4 text-green-500" />
+                        <span>Pagamento Seguro</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                        <Infinity className="h-4 w-4 text-green-500" />
+                        <span>Acesso Vitalício</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                        <BadgeCheck className="h-4 w-4 text-green-500" />
+                        <span>7 Dias de Garantia</span>
+                    </div>
                 </div>
                 <Progress value={progressValue} className="w-full mt-4 h-2 [&>div]:bg-gold" />
                 <p className="text-sm font-bold text-gold mt-2 text-center">{remainingSpots} vagas restantes</p>
