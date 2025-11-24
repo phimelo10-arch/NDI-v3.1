@@ -2,29 +2,11 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { Check, ChevronDown, Hourglass, Gem, Globe, Lock, Headphones, Smartphone, Ticket, BrainCircuit, Package, CheckSquare, Dna, Palette, Pin, Plug, Languages, ShieldCheck, Infinity, BadgeCheck } from 'lucide-react';
+import { CheckSquare, ChevronDown, Hourglass, Package, ShieldCheck, Infinity, BadgeCheck } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
-
-const communityFeatures = [
-  { icon: Globe, text: "Acesso à Comunidade" },
-  { icon: Lock, text: "Servidor exclusivo no Discord" },
-  { icon: Headphones, text: "Salas 1, 2 e 3 para estudo e networking" },
-  { icon: Smartphone, text: "Link do grupo no WhatsApp (com suporte real)" },
-  { icon: Ticket, text: "Acesso prioritário aos eventos e workshops" },
-  { icon: BrainCircuit, text: "Contato direto com mentores e irmãos experientes" },
-];
-
-const toolsFeatures = [
-  { icon: CheckSquare, text: "11 VSLs prontas para copiar e vender imediatamente" },
-  { icon: Dna, text: "Clonador de Páginas (copie páginas que vendem)" },
-  { icon: Palette, text: "Pack com +70 criativos profissionais" },
-  { icon: Palette, text: "Pack extra de criativos — Volume 2" },
-  { icon: Pin, text: "Guia para instalar Pixel Cakto (passo a passo)" },
-  { icon: Plug, text: "Fornecedor para comprar seguidores com segurança" },
-  { icon: Languages, text: "Pack PLR em espanhol para criar novos produtos" },
-];
+import { communityFeatures, toolsFeatures } from '@/lib/features';
 
 
 const totalSpots = 50;
@@ -94,6 +76,7 @@ export function Pricing() {
         <ChevronDown className="h-8 w-8 text-muted-foreground" />
       </div>
       <div>
+        <h2 className="text-2xl font-bold mb-4 font-headline text-primary">Quer entrar na nossa comunidade, irmão?</h2>
         <h3 className="text-xl md:text-2xl font-bold mt-4 font-headline text-primary">Lote 3 (Após 300 membros): R$47 no pix</h3>
       </div>
       <div className="space-y-4 mt-8">
