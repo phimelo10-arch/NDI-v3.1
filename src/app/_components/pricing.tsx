@@ -154,7 +154,6 @@ export function Pricing() {
             <div className="mb-2">
               <p className="text-sm flex items-center justify-center gap-2">
                 <Hourglass className="h-4 w-4" />
-                AGUARDE
               </p>
             </div>
             <CardTitle className="text-xl font-headline">Lote 3: R$31,00</CardTitle>
