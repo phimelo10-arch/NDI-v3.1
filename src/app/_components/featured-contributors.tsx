@@ -52,7 +52,7 @@ export function FeaturedContributors() {
       </div>
 
       <div className="relative w-full overflow-hidden">
-        <div className="flex animate-marquee-slow space-x-8">
+        <div className="flex animate-marquee-fast md:animate-marquee-slow space-x-8">
           {duplicatedContributors.map((contributor, index) => (
             contributor && (
               <div key={index} className="flex-shrink-0 flex flex-col items-center space-y-2 text-center w-32">

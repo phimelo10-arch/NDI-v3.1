@@ -108,6 +108,7 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'marquee-slow': 'marquee 40s linear infinite',
+        'marquee-fast': 'marquee 20s linear infinite',
         'pulse-dopamine': 'pulse-dopamine 2s infinite',
       },
     },
