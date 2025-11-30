@@ -129,7 +129,7 @@ export function Pricing() {
             <div className="w-full">
                 <Button asChild size="lg" className="w-full bg-gold text-black hover:bg-gold/90 text-lg font-bold animate-pulse-dopamine" onClick={handleAddToCart}>
                     <Link href="https://pay.cakto.com.br/jxytgx9_651328">
-                    Quero ser um irmão por R$18
+                    Quero ser um irmão por R$22
                     <ArrowRight className="h-5 w-5 ml-2" />
                     </Link>
                 </Button>
