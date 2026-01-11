@@ -158,7 +158,7 @@ export function Pricing() {
                 <Hourglass className="h-4 w-4" />
               </p>
             </div>
-            <CardTitle className="text-xl font-headline">Lote 3: R$31,00</CardTitle>
+            <CardTitle className="text-xl font-headline">Lote 3: R$37,00</CardTitle>
             <p className="text-xs">Disponível assim que o Lote 2 esgotar.</p>
           </CardHeader>
         </Card>
