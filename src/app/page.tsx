@@ -21,8 +21,8 @@ export default function Home() {
           <Pricing />
         </div>
         <NewMembers />
-        <TestimonialsVideo />
         <ContentShowcase />
+        <TestimonialsVideo />
         <BrotherOfTheWeek />
       </main>
       <PixelEvents />
