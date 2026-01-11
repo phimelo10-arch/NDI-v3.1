@@ -20,8 +20,8 @@ export default function Home() {
         <div className="w-full max-w-3xl space-y-10 text-center">
           <Pricing />
         </div>
-        <TestimonialsVideo />
         <NewMembers />
+        <TestimonialsVideo />
         <ContentShowcase />
         <BrotherOfTheWeek />
       </main>
